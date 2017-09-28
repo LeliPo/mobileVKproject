@@ -11,7 +11,7 @@ import UIKit
 class AllGroupsController: UITableViewController {
     
     var allGroups = [
-        "Тёмны Тёмный Лес",
+        "Тёмный Тёмный Лес",
         "Море-Океан",
         "Некоторое царство",
         "Терем на горе"
