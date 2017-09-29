@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import WebKit
+import Alamofire
 
 class LoginFormControler: UIViewController {
 
@@ -18,6 +20,8 @@ class LoginFormControler: UIViewController {
     @IBOutlet weak var passwordView: UITextField!
     //@IBOutlet weak var someView: UILable!
     
+    
+    var service = VKLoginService()
 
     override func viewDidLoad() {
         super.viewDidLoad()

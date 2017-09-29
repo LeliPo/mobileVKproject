@@ -373,10 +373,10 @@
             </objects>
             <point key="canvasLocation" x="1856.25" y="-1458.75"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="bhO-Cy-sHd">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lEc-fh-xe8" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lEc-fh-xe8" customClass="TabBarViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="EUI-aD-QSI">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
