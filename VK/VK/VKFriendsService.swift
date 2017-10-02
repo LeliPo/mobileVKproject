@@ -7,46 +7,20 @@
 //
 
 import Foundation
-import Alamofire
 
-class VKFriendsService{
+class VKFriendsService {
+    var id : UInt
+    var firstName : String
+    var lastName : String
+    var smallPhotoURL : String
+    var bigPhotoURL : String
     
-  let sessionManager = sessionManagerG
-    
-    func getFriends(){
-        
-        let parameters: Parameters = [
-            "count" : "10",
-           "access_token" : "\(globalToken)",
-            "v" : "5.68",
-            "fields" : "nickname"
-        ]
-        
-        sessionManager.request("https://api.vk.com/method/friends.get", parameters: parameters).responseJSON { response in
-            
-            print(response.value ?? response.error ?? "fucked up")
-        }
-        
+    init( _ user : Any) {
+        let user  = user as? [String: Any]
+        self.id = user!["user_id"] as! UInt
+        self.firstName = user!["first_name"] as! String
+        self.lastName = user!["last_name"] as! String
+        self.smallPhotoURL = user!["photo_50"] as! String
+        self.bigPhotoURL = user!["photo_100"] as! String
     }
-    
-    func getPhotos(ownerID: String){
-        
-        let parameters: Parameters = [
-            "owner_id": ownerID,
-            "extended" : "0",
-            "count" : "10",
-            "no_service_albums" : "1",
-          "access_token" : "\(globalToken)",
-            "v" : "5.68"
-        ]
-        
-        sessionManager.request("https://api.vk.com/method/photos.getAll", parameters: parameters).responseJSON { response in
-            
-            print(response.value ?? response.error ?? "fucked up")
-        }
-        
-    }
-    
-    
-    
 }

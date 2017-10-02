@@ -10,35 +10,45 @@ import UIKit
 import WebKit
 import Alamofire
 
-class ViewController: UIViewController {
+class StartViewController: UIViewController {
     
     @IBOutlet weak var webViewStart: WKWebView!
   
         {
-        didSet {
+        didSet{
             webViewStart.navigationDelegate = self
         }
     }
     
-    var service = VKLoginService()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webViewStart.load(service.getrequest())
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "oauth.vk.com"
+        urlComponents.path = "/authorize"
+        urlComponents.queryItems = [
+            URLQueryItem(name: "client_id", value: "6196172"),
+            URLQueryItem(name: "display", value: "mobile"),
+            URLQueryItem(name: "redirect_uri", value: "https://oauth.vk.com/blank.html"),
+            URLQueryItem(name: "scope", value: "262150"),
+            URLQueryItem(name: "response_type", value: "token"),
+            URLQueryItem(name: "v", value: "5.68")
+        ]
+        
+        let request = URLRequest(url: urlComponents.url!)
+        //request.httpShouldHandleCookies = false
+        webViewStart.load(request)
     }
-    
-    
 }
 
-extension ViewController: WKNavigationDelegate {
+extension StartViewController: WKNavigationDelegate {
+    
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
         
-        guard let url = navigationResponse.response.url,
-            url.path == "/blank.html",
-            let fragment = url.fragment  else {
-                decisionHandler(.allow)
-                return
+        guard let url = navigationResponse.response.url, url.path == "/blank.html", let fragment = url.fragment  else {
+            decisionHandler(.allow)
+            return
         }
         
         let params = fragment
@@ -53,15 +63,11 @@ extension ViewController: WKNavigationDelegate {
         }
         
         print(params)
-        
+        VKLoginService.userId = Int(params["user_id"]!)!
         let token = params["access_token"]
+        decisionHandler(.allow)
         
-        globalToken = token!
-        decisionHandler(.cancel)
-        
-        performSegue(withIdentifier: "toLoginPage", sender: token)
+        VKLoginService.token = (token)!
+        self.performSegue(withIdentifier: "firstWindow", sender: nil)
     }
 }
-
-var globalToken: String = ""
-

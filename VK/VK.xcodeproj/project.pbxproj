@@ -16,8 +16,8 @@
 		C72CDE901F7E882300ADB5BC /* VKLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE8F1F7E882300ADB5BC /* VKLoginService.swift */; };
 		C72CDE921F7E886700ADB5BC /* VKFriendsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE911F7E886700ADB5BC /* VKFriendsService.swift */; };
 		C72CDE941F7E88A100ADB5BC /* VKGroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */; };
-		C72CDE961F7E8F9000ADB5BC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE951F7E8F9000ADB5BC /* TabBarViewController.swift */; };
 		C72CDE9A1F811A2E00ADB5BC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE991F811A2E00ADB5BC /* StartViewController.swift */; };
+		C78FC0E91F82E2C0008ED17D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0E81F82E2C0008ED17D /* Utils.swift */; };
 		C79B395C1F6C15AF00AE9A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B395B1F6C15AF00AE9A02 /* AppDelegate.swift */; };
 		C79B39611F6C15AF00AE9A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79B395F1F6C15AF00AE9A02 /* Main.storyboard */; };
 		C79B39631F6C15AF00AE9A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79B39621F6C15AF00AE9A02 /* Assets.xcassets */; };
@@ -35,8 +35,8 @@
 		C72CDE8F1F7E882300ADB5BC /* VKLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginService.swift; sourceTree = "<group>"; };
 		C72CDE911F7E886700ADB5BC /* VKFriendsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKFriendsService.swift; sourceTree = "<group>"; };
 		C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKGroupsService.swift; sourceTree = "<group>"; };
-		C72CDE951F7E8F9000ADB5BC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C72CDE991F811A2E00ADB5BC /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		C78FC0E81F82E2C0008ED17D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C79B39581F6C15AF00AE9A02 /* VK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79B395B1F6C15AF00AE9A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79B39601F6C15AF00AE9A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,7 +78,6 @@
 		C701EC8F1F7A8F2D00340AA9 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
-				C701EC9A1F7A965C00340AA9 /* MyGroupsController.swift */,
 				C701EC9C1F7A999700340AA9 /* AllGroupsController.swift */,
 				C701EC9E1F7A99AC00340AA9 /* AllGroupsCell.swift */,
 			);
@@ -93,6 +92,22 @@
 				C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		C78FC0E71F82E270008ED17D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C78FC0E81F82E2C0008ED17D /* Utils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		C78FC0EA1F82E3C9008ED17D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				C701EC9A1F7A965C00340AA9 /* MyGroupsController.swift */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		C79B394F1F6C15AF00AE9A02 = {
@@ -116,6 +131,8 @@
 		C79B395A1F6C15AF00AE9A02 /* VK */ = {
 			isa = PBXGroup;
 			children = (
+				C78FC0EA1F82E3C9008ED17D /* New Group */,
+				C78FC0E71F82E270008ED17D /* Utils */,
 				C72CDE8E1F7E86D600ADB5BC /* Services */,
 				C701EC8F1F7A8F2D00340AA9 /* Groups */,
 				C701EC8E1F7A8F2300340AA9 /* Friends */,
@@ -124,7 +141,6 @@
 				C79B395F1F6C15AF00AE9A02 /* Main.storyboard */,
 				C79B39621F6C15AF00AE9A02 /* Assets.xcassets */,
 				C79B39641F6C15AF00AE9A02 /* LaunchScreen.storyboard */,
-				C72CDE951F7E8F9000ADB5BC /* TabBarViewController.swift */,
 				C79B39671F6C15AF00AE9A02 /* Info.plist */,
 			);
 			path = VK;
@@ -270,7 +286,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C701EC9D1F7A999700340AA9 /* AllGroupsController.swift in Sources */,
-				C72CDE961F7E8F9000ADB5BC /* TabBarViewController.swift in Sources */,
 				C72CDE941F7E88A100ADB5BC /* VKGroupsService.swift in Sources */,
 				C701EC9B1F7A965C00340AA9 /* MyGroupsController.swift in Sources */,
 				C72CDE9A1F811A2E00ADB5BC /* StartViewController.swift in Sources */,
@@ -279,6 +294,7 @@
 				C72CDE921F7E886700ADB5BC /* VKFriendsService.swift in Sources */,
 				C72CDE901F7E882300ADB5BC /* VKLoginService.swift in Sources */,
 				C701EC931F7A8F9A00340AA9 /* AllFriendsCell.swift in Sources */,
+				C78FC0E91F82E2C0008ED17D /* Utils.swift in Sources */,
 				C701EC9F1F7A99AC00340AA9 /* AllGroupsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2UC5J5K2L7;
 				INFOPLIST_FILE = VK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UGB.VK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,6 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2UC5J5K2L7;
 				INFOPLIST_FILE = VK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = UGB.VK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
