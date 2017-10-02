@@ -9,86 +9,52 @@
 import UIKit
 
 class AllFriendsController: UITableViewController {
-
-    var friends = [
-        "Змей Горыныч",
-        "Девица Краса",
-        "Леший Боровик",
-        "Царь Кощей"
-    ]
-    
+    let vkService = VKLoginService()
+    var token = ""
+    var myFrends = [VKFriendsService]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
+        
+        vkService.getFrends() { [weak self] myFrends in
+            self?.myFrends = myFrends
+            self?.tableView?.reloadData()
+        }
     }
-
-
-  
-
+    
+    // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
-   
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
+        return myFrends.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AllCellFriends", for: indexPath) as! AllFriendsCell
-
-        let friend = friends[indexPath.row]
-        cell.nameFriendsView.text = friend
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyFrendsCell", for: indexPath) as! AllFriendsCell
+        
+    
+        cell.idFrend = myFrends[indexPath.row].id
+        cell.nameFriendsView.text = myFrends[indexPath.row].firstName + " " + myFrends[indexPath.row].lastName
+        cell.imageView?.setImageFromURl(stringImageUrl: myFrends[indexPath.row].smallPhotoURL)
+        
         return cell
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "segueMyFrend" {
+            let cell = sender as! AllFriendsCell
+            let selectedFrend = myFrends.filter({ $0.id == cell.idFrend })
+            
+            if selectedFrend.count == 0 {
+                fatalError()
+            }
+            let fotoMyFrendCollectionViewController = segue.destination as! FotoMyFrendCollectionViewController
+            fotoMyFrendCollectionViewController.firstName = selectedFrend[0].firstName
+            fotoMyFrendCollectionViewController.lastName = selectedFrend[0].lastName
+            fotoMyFrendCollectionViewController.bigPhotoURL = selectedFrend[0].bigPhotoURL
+        }
     }
-    */
-
 }

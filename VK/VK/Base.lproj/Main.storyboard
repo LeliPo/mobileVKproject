@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,11 +24,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dDH-Pv-7za">
-                                            <rect key="frame" x="13" y="1" width="40" height="40"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiZ-4f-ttt">
                                             <rect key="frame" x="77" y="11" width="235" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -37,9 +31,17 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x51-XL-RZF">
+                                            <rect key="frame" x="21" y="1" width="40" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.98565378845196094" green="1" blue="0.90905688895588921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <outlet property="AvatarMyGroup" destination="x51-XL-RZF" id="pZQ-4X-fga"/>
+                                    <outlet property="nameMyGroup" destination="jiZ-4f-ttt" id="jVR-hl-8X0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -166,38 +168,37 @@
             </objects>
             <point key="canvasLocation" x="2671.875" y="-786.25"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Foto Friends View Controller-->
         <scene sceneID="Jlg-H4-KbC">
             <objects>
-                <collectionViewController id="EuF-b3-i2a" sceneMemberID="viewController">
+                <collectionViewController id="EuF-b3-i2a" customClass="FotoFriendsViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ndW-fL-a9d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h5m-bm-5r3">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="273" height="233"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionlFriendsAvatar" id="AYs-CJ-diA" customClass="CollectionViewCellFriendsAvatar" customModule="VK" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionlFriendsAvatar" id="AYs-CJ-diA" customClass="FotoFriendsViewCell" customModule="VK" customModuleProvider="target">
+                                <rect key="frame" x="23.5" y="0.0" width="273" height="233"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="273" height="233"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LEj-eQ-4Re">
-                                            <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fH4-lP-3TZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="273" height="233"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </imageView>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" red="1" green="0.61143607398515276" blue="0.9664458075063842" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
-                                    <outlet property="AvatarFriendsView" destination="LEj-eQ-4Re" id="Iqh-Hi-7QL"/>
+                                    <outlet property="fotoFrend" destination="fH4-lP-3TZ" id="10c-xH-TLR"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
