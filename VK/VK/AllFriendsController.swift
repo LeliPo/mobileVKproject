@@ -15,7 +15,7 @@ class AllFriendsController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // fuck
         vkService.getFrends() { [weak self] myFrends in
             self?.myFrends = myFrends
             self?.tableView?.reloadData()
@@ -33,7 +33,7 @@ class AllFriendsController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyFrendsCell", for: indexPath) as! AllFriendsCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AllFrendsCell", for: indexPath) as! AllFriendsCell
         
     
         cell.idFrend = myFrends[indexPath.row].id

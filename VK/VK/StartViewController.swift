@@ -12,11 +12,12 @@ import Alamofire
 
 class StartViewController: UIViewController {
     
-    @IBOutlet weak var webViewStart: WKWebView!
+    @IBOutlet weak var startWebVieW: WKWebView!
+
   
         {
         didSet{
-            webViewStart.navigationDelegate = self
+            startWebVieW.navigationDelegate = self
         }
     }
     
@@ -38,7 +39,7 @@ class StartViewController: UIViewController {
         
         let request = URLRequest(url: urlComponents.url!)
         //request.httpShouldHandleCookies = false
-        webViewStart.load(request)
+        startWebVieW.load(request)
     }
 }
 
