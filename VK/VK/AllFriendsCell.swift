@@ -12,8 +12,10 @@ class AllFriendsCell: UITableViewCell {
 
    var idFrend : UInt!
     
-    @IBOutlet weak var AvaterFriendsView: UIView!
-    @IBOutlet weak var nameFriendsView: UILabel!
+    @IBOutlet weak var friendsAvatar: UIImageView!
+    
+    @IBOutlet weak var friendsNamee: UILabel!
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

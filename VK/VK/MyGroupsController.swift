@@ -41,7 +41,7 @@ class MyGroupsController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyGroupsCell", for: indexPath) as! MyGroupsCell
 
-        cell.nameMyGroup.text = myGroups[indexPath.row].name
+        cell.nameGroupMy.text = myGroups[indexPath.row].name
         cell.avatarMyGroup?.setImageFromURl(stringImageUrl: myGroups[indexPath.row].photoURL)
         
         return cell

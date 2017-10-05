@@ -11,9 +11,13 @@ import UIKit
 class AllGroupsCell: UITableViewCell {
 
     
-    @IBOutlet weak var nameGroup: UILabel!
+    @IBOutlet weak var nameAllGroups: UILabel!
+    @IBOutlet weak var countManinGroups: UILabel!
+    //@IBOutlet weak var nameGroups: UILabel!
+    //@IBOutlet weak var countPiopleGroup: UILabel!
+    // @IBOutlet weak var nameGroup: UILabel!
     
-    @IBOutlet weak var countManinGroup: UILabel!
+  //  @IBOutlet weak var countManinGroup: UILabel!
     //    @IBOutlet weak var countFriendsinGroup: UILabel!
 //    @IBOutlet weak var nameAllGroup: UILabel!
    

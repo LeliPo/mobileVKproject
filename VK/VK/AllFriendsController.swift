@@ -37,8 +37,8 @@ class AllFriendsController: UITableViewController {
         
     
         cell.idFrend = myFrends[indexPath.row].id
-        cell.nameFriendsView.text = myFrends[indexPath.row].firstName + " " + myFrends[indexPath.row].lastName
-        cell.imageView?.setImageFromURl(stringImageUrl: myFrends[indexPath.row].smallPhotoURL)
+        cell.friendsNamee.text = myFrends[indexPath.row].firstName + " " + myFrends[indexPath.row].lastName
+        cell.friendsAvatar?.setImageFromURl(stringImageUrl: myFrends[indexPath.row].smallPhotoURL)
         
         return cell
     }

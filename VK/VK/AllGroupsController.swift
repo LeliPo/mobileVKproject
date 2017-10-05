@@ -48,10 +48,10 @@ class AllGroupsController: UITableViewController, UISearchBarDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllGroupsCell", for: indexPath) as! AllGroupsCell
         
         if isSearching {
-            cell.nameGroup.text = filterGroups[indexPath.row].name
+            cell.nameAllGroups.text = filterGroups[indexPath.row].name
             cell.imageView?.setImageFromURl(stringImageUrl: filterGroups[indexPath.row].photoURL)
             
-            cell.countManinGroup.text = String(filterGroups[indexPath.row].membersCount)
+            cell.countManinGroups.text = String(filterGroups[indexPath.row].membersCount)
            
         }
         return cell

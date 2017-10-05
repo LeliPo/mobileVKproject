@@ -8,7 +8,7 @@
 
 import UIKit
 import WebKit
-import Alamofire
+//import Alamofire
 
 class StartViewController: UIViewController {
     
@@ -69,6 +69,6 @@ extension StartViewController: WKNavigationDelegate {
         decisionHandler(.allow)
         
         VKLoginService.token = (token)!
-        self.performSegue(withIdentifier: "firstWindow", sender: nil)
+        self.performSegue(withIdentifier: "toLoginPage", sender: nil)
     }
 }
