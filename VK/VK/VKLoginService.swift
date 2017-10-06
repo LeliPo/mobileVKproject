@@ -9,6 +9,8 @@
 import Foundation
 import Alamofire
 
+
+
 enum methodRequest : String {
     case getMyFrends   = "/friends.get"
     case getPhotos     = "/photos.getAll"

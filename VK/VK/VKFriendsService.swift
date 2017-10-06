@@ -7,15 +7,17 @@
 //
 
 import Foundation
+import RealmSwift
 
-class VKFriendsService {
-    var id : UInt
-    var firstName : String
-    var lastName : String
-    var smallPhotoURL : String
-    var bigPhotoURL : String
+class VKFriendsService : Object {
+    @objc  dynamic var id : UInt
+    @objc  dynamic var firstName : String
+    @objc  dynamic var lastName : String
+    @objc  dynamic var smallPhotoURL : String
+    @objc  dynamic var bigPhotoURL : String
     
-    init( _ user : Any) {
+   convenience init( _ user : Any) {
+        self.init ()
         let user  = user as? [String: Any]
         self.id = user!["user_id"] as! UInt
         self.firstName = user!["first_name"] as! String
