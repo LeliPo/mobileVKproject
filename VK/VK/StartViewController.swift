@@ -5,16 +5,16 @@
 //  Created by  Алёна Бенецкая on 01.10.17.
 //  Copyright © 2017  Алёна Бенецкая. All rights reserved.
 //
-
+import Foundation
 import UIKit
 import WebKit
-//import Alamofire
 
+
+
+let userDefaults = UserDefaults.standard
 class StartViewController: UIViewController {
     
     @IBOutlet weak var startWebVieW: WKWebView!
-
-  
         {
         didSet{
             startWebVieW.navigationDelegate = self
@@ -43,6 +43,7 @@ class StartViewController: UIViewController {
     }
 }
 
+
 extension StartViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
@@ -63,12 +64,14 @@ extension StartViewController: WKNavigationDelegate {
                 return dict
         }
         
-        print(params)
-        VKLoginService.userId = Int(params["user_id"]!)!
         let token = params["access_token"]
-        decisionHandler(.allow)
+        userDefaults.set(token!, forKey: "token")
         
-        VKLoginService.token = (token)!
-        self.performSegue(withIdentifier: "toLoginPage", sender: nil)
+        performSegue(withIdentifier: "toLoginPage", sender: token)
+        
+        decisionHandler(.cancel)
+    }
+    
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
     }
 }

@@ -7,54 +7,60 @@
 //
 
 import UIKit
+import Alamofire
+import RealmSwift
 
 class AllFriendsController: UITableViewController {
-    let vkService = VKLoginService()
-    var token = ""
-    var myFrends = [VKFriendsService]()
+    
+    let friendRequest = FriendsRequest()
+    var friends = [Friend]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // fuck
-        vkService.getFrends() { [weak self] myFrends in
-            self?.myFrends = myFrends
-            self?.tableView?.reloadData()
+    
+      loadData()
+  
+         friendRequest.loadFriendsData() { [weak self] in
+          self?.loadData()
+          self?.tableView.reloadData()
         }
     }
     
-    // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myFrends.count
+        return friends.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllFrendsCell", for: indexPath) as! AllFriendsCell
+        let friend = friends[indexPath.row]
         
-    
-        cell.idFrend = myFrends[indexPath.row].id
-        cell.friendsNamee.text = myFrends[indexPath.row].firstName + " " + myFrends[indexPath.row].lastName
-        cell.friendsAvatar?.setImageFromURl(stringImageUrl: myFrends[indexPath.row].smallPhotoURL)
+        cell.friendsNamee.text = friend.firstName + " " + friend.lastName
+        guard let imgURL = URL(string: friend.photoAvatar) else {return cell}
+        Alamofire.request(imgURL).responseData { (response) in
+            cell.friendsAvatar.image = UIImage(data: response.data!)
+        }
         
         return cell
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueMyFrend" {
-            let cell = sender as! AllFriendsCell
-            let selectedFrend = myFrends.filter({ $0.id == cell.idFrend })
-            
-            if selectedFrend.count == 0 {
-                fatalError()
-            }
-            let fotoMyFrendCollectionViewController = segue.destination as! FotoMyFrendCollectionViewController
-            fotoMyFrendCollectionViewController.firstName = selectedFrend[0].firstName
-            fotoMyFrendCollectionViewController.lastName = selectedFrend[0].lastName
-            fotoMyFrendCollectionViewController.bigPhotoURL = selectedFrend[0].bigPhotoURL
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let indexPathCurrent = tableView.indexPathForSelectedRow
+        let whoIsYourFriend = String(friends[(indexPathCurrent?.row)!].userID)
+        userDefaults.set(whoIsYourFriend, forKey: "whoIsYourFriend")
+    }
+    
+    func loadData() {
+        do {
+            let realm = try Realm()
+            let friends = realm.objects(Friend.self)
+            self.friends = Array(friends)
+        } catch {
+            print(error)
         }
     }
 }

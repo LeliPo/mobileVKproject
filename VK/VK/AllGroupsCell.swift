@@ -13,24 +13,16 @@ class AllGroupsCell: UITableViewCell {
     
     @IBOutlet weak var nameAllGroups: UILabel!
     @IBOutlet weak var countManinGroups: UILabel!
-    //@IBOutlet weak var nameGroups: UILabel!
-    //@IBOutlet weak var countPiopleGroup: UILabel!
-    // @IBOutlet weak var nameGroup: UILabel!
+    @IBOutlet weak var groupFhoto: UIImageView!
     
-  //  @IBOutlet weak var countManinGroup: UILabel!
-    //    @IBOutlet weak var countFriendsinGroup: UILabel!
-//    @IBOutlet weak var nameAllGroup: UILabel!
    
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

@@ -7,69 +7,82 @@
 //
 
 import UIKit
+import Alamofire
 
 class AllGroupsController: UITableViewController, UISearchBarDelegate {
     
-    let vkService = VKLoginService()
-    let delay = Delay()
-    var filterGroups = [VKGroupsService]()
+    let searchController = UISearchController(searchResultsController: nil)
+    var groupsRequest = GroupsRequest()
     
-    @IBOutlet weak var searchBarView: UISearchBar!
-    var isSearching = false
+    var groups = [Group]()
+   
+    func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        userDefaults.set(searchText, forKey: "whatYouSearch")
+        
+        groupsRequest.loadGroupSearchData() { [weak self] groups in
+            self?.groups = groups
+            self?.tableView.reloadData()
+        }
+        tableView.reloadData()
+    }
+    
+    func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+//
+//    @IBOutlet weak var searchBarView: UISearchBar!
+//    var isSearching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchBarView.delegate = self
-        searchBarView.returnKeyType = UIReturnKeyType.done
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filterGroups.count
+        if isFiltering() {
+            return groups.count
+        }
+        return 1
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
-    {
-        return 80.0
-    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllGroupsCell", for: indexPath) as! AllGroupsCell
         
-        if isSearching {
-            cell.nameAllGroups.text = filterGroups[indexPath.row].name
-            cell.imageView?.setImageFromURl(stringImageUrl: filterGroups[indexPath.row].photoURL)
+        if isFiltering() {
+            let group = groups[indexPath.row]
+            cell.nameAllGroups.text  = group.name
             
-            cell.countManinGroups.text = String(filterGroups[indexPath.row].membersCount)
+            guard let imgURL = URL(string: group.photo) else { return cell }
+            Alamofire.request(imgURL).responseData { (response) in
+                cell.groupFhoto.image = UIImage(data: response.data!)
+            
+//            cell.countManinGroups.text = String(filterGroups[indexPath.row].membersCount)
            
         }
+      }
         return cell
     }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchBar.text == "" || searchBar.text == nil {
-            isSearching = false
-            view.endEditing(true)
-            tableView.reloadData()
-        } else {
-            isSearching = true
-            delay.delayTime{ // выполняется задержка в 0,85 секунд при вводе, чтобы не отправлять запрос сразу
-                self.vkService.searchGroups(searchText: searchBar.text!.lowercased()){ [weak self] filterGroups in
-                    self?.filterGroups = filterGroups
-                    self?.tableView?.reloadData()
-                }
-            }
-        }
+}
+extension AllGroupsController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
     }
 }

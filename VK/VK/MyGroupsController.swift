@@ -7,42 +7,51 @@
 //
 
 import UIKit
+import Alamofire
+import RealmSwift
+
 
 class MyGroupsController: UITableViewController {
 
-    let vkService = VKLoginService()
-    
-    var myGroups = [VKGroupsService]()
+    var myGroups : Results<Group>?
+    var token: NotificationToken?
+    var realm = RealmMethods()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableVersusRealm()
 
-        vkService.getMyGroups( ){ [weak self] myGroups in
-            self?.myGroups = myGroups
-            self?.tableView?.reloadData()
         }
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myGroups.count
+        return myGroups?.count ?? 0
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyGroupsCell", for: indexPath) as! MyGroupsCell
 
-        cell.nameGroupMy.text = myGroups[indexPath.row].name
-        cell.avatarMyGroup?.setImageFromURl(stringImageUrl: myGroups[indexPath.row].photoURL)
+        guard let group = myGroups?[indexPath.row] else {
+            cell.nameGroupMy.text = ""
+            return cell
+        }
+        cell.nameGroupMy.text = group.name
+        
+        guard let imgURL = URL(string: group.photo) else { return cell }
+        Alamofire.request(imgURL).responseData { (response) in
+            cell.avatarMyGroup.image = UIImage(data: response.data!)
+        }
+        //cell.avatarMyGroup?.setImageFromURl(stringImageUrl: myGroups[indexPath.row].photoURL)
         
         return cell
     }
@@ -50,17 +59,11 @@ class MyGroupsController: UITableViewController {
     
     @IBAction func addGroup(segue: UIStoryboardSegue) {
         if segue.identifier == "addGroup" {
-            
             let allGroupsController = segue.source as! AllGroupsController
-            
-            if let indexPath = allGroupsController.tableView.indexPathForSelectedRow {
-                
-                //let selectGroup = allGroupsController.allGroups[indexPath.row]
-//                if !myGroups.contains(where: {$0.nameGroup == selectGroup.nameGroup}) {
-//                    //allGroupsController.allGroups[indexPath.row].countMember += 1
-//                    myGroups.append(selectGroup)
-//                    tableView.reloadData()
-//                }
+            guard let indexPath = allGroupsController.tableView.indexPathForSelectedRow else { return }
+            let group = allGroupsController.groups[indexPath.row]
+            if isContains(group) {
+                realm.saveItemData(group)
             }
         }
     }
@@ -69,9 +72,48 @@ class MyGroupsController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
-            myGroups.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+             guard let deletedGroup = myGroups?[indexPath.row] else { return }
+             realm.deleteItemData(deletedGroup)
         }
     }
+    func isContains(_ group: Group) -> Bool {
+        var result = true
+        if let groups = myGroups {
+            for value in groups {
+                if group.groupID == value.groupID {
+                    result = false
+                }
+            }
+        }
+        return result
+    }
 
+    func tableVersusRealm() {
+        do {
+            let realm = try Realm()
+            myGroups = realm.objects(Group.self)
+            token = myGroups?.addNotificationBlock { [weak self] (changes: RealmCollectionChange) in
+                guard let tableView = self?.tableView else { return }
+                switch changes {
+                case .initial:
+                    tableView.reloadData()
+                case .update(_, let deletions, let insertions, let modifications):
+                    tableView.beginUpdates()
+                    tableView.insertRows(at: insertions.map({ IndexPath(row: $0, section: 0) }),
+                                         with: .automatic)
+                    tableView.deleteRows(at: deletions.map({ IndexPath(row: $0, section: 0)}),
+                                         with: .automatic)
+                    tableView.reloadRows(at: modifications.map({ IndexPath(row: $0, section: 0) }),
+                                         with: .automatic)
+                    tableView.endUpdates()
+                    
+                case .error(let error):
+                    fatalError("\(error)")
+                    break
+                }
+            }
+        } catch {
+            print(error)
+        }
+    }
 }

@@ -13,15 +13,18 @@
 		C701EC9B1F7A965C00340AA9 /* MyGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C701EC9A1F7A965C00340AA9 /* MyGroupsController.swift */; };
 		C701EC9D1F7A999700340AA9 /* AllGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C701EC9C1F7A999700340AA9 /* AllGroupsController.swift */; };
 		C701EC9F1F7A99AC00340AA9 /* AllGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C701EC9E1F7A99AC00340AA9 /* AllGroupsCell.swift */; };
-		C72CDE901F7E882300ADB5BC /* VKLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE8F1F7E882300ADB5BC /* VKLoginService.swift */; };
+		C71BAF551F8E5B52004E5461 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71BAF541F8E5B52004E5461 /* Group.swift */; };
+		C71BAF571F8E5B67004E5461 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71BAF561F8E5B67004E5461 /* Photo.swift */; };
+		C72CDE901F7E882300ADB5BC /* VKPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE8F1F7E882300ADB5BC /* VKPhotoService.swift */; };
 		C72CDE921F7E886700ADB5BC /* VKFriendsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE911F7E886700ADB5BC /* VKFriendsService.swift */; };
 		C72CDE941F7E88A100ADB5BC /* VKGroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */; };
 		C72CDE9A1F811A2E00ADB5BC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE991F811A2E00ADB5BC /* StartViewController.swift */; };
-		C78FC0E91F82E2C0008ED17D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0E81F82E2C0008ED17D /* Utils.swift */; };
+		C78FC0E91F82E2C0008ED17D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0E81F82E2C0008ED17D /* Friend.swift */; };
 		C78FC0EE1F82E504008ED17D /* MyGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0ED1F82E504008ED17D /* MyGroupsCell.swift */; };
 		C78FC0F41F82E6DC008ED17D /* FotoFriendsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0F31F82E6DC008ED17D /* FotoFriendsViewCell.swift */; };
 		C78FC0F61F82E6F3008ED17D /* FotoFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0F51F82E6F3008ED17D /* FotoFriendsViewController.swift */; };
-		C78FC0F91F82EBF4008ED17D /* Mock Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0F81F82EBF4008ED17D /* Mock Data.swift */; };
+		C78FC0F91F82EBF4008ED17D /* RealmMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0F81F82EBF4008ED17D /* RealmMethods.swift */; };
+		C79AC5641F8E786B0021849A /* VKCountManGroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79AC5631F8E786B0021849A /* VKCountManGroupService.swift */; };
 		C79B395C1F6C15AF00AE9A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B395B1F6C15AF00AE9A02 /* AppDelegate.swift */; };
 		C79B39611F6C15AF00AE9A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79B395F1F6C15AF00AE9A02 /* Main.storyboard */; };
 		C79B39631F6C15AF00AE9A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79B39621F6C15AF00AE9A02 /* Assets.xcassets */; };
@@ -36,15 +39,18 @@
 		C701EC9A1F7A965C00340AA9 /* MyGroupsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGroupsController.swift; sourceTree = "<group>"; };
 		C701EC9C1F7A999700340AA9 /* AllGroupsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllGroupsController.swift; sourceTree = "<group>"; };
 		C701EC9E1F7A99AC00340AA9 /* AllGroupsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllGroupsCell.swift; sourceTree = "<group>"; };
-		C72CDE8F1F7E882300ADB5BC /* VKLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginService.swift; sourceTree = "<group>"; };
+		C71BAF541F8E5B52004E5461 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		C71BAF561F8E5B67004E5461 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C72CDE8F1F7E882300ADB5BC /* VKPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKPhotoService.swift; sourceTree = "<group>"; };
 		C72CDE911F7E886700ADB5BC /* VKFriendsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKFriendsService.swift; sourceTree = "<group>"; };
 		C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKGroupsService.swift; sourceTree = "<group>"; };
 		C72CDE991F811A2E00ADB5BC /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		C78FC0E81F82E2C0008ED17D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C78FC0E81F82E2C0008ED17D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		C78FC0ED1F82E504008ED17D /* MyGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsCell.swift; sourceTree = "<group>"; };
 		C78FC0F31F82E6DC008ED17D /* FotoFriendsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoFriendsViewCell.swift; sourceTree = "<group>"; };
 		C78FC0F51F82E6F3008ED17D /* FotoFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoFriendsViewController.swift; sourceTree = "<group>"; };
-		C78FC0F81F82EBF4008ED17D /* Mock Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mock Data.swift"; sourceTree = "<group>"; };
+		C78FC0F81F82EBF4008ED17D /* RealmMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMethods.swift; sourceTree = "<group>"; };
+		C79AC5631F8E786B0021849A /* VKCountManGroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKCountManGroupService.swift; sourceTree = "<group>"; };
 		C79B39581F6C15AF00AE9A02 /* VK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79B395B1F6C15AF00AE9A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79B39601F6C15AF00AE9A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,10 +83,8 @@
 		C701EC8E1F7A8F2300340AA9 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
-				C701EC901F7A8F7400340AA9 /* AllFriendsController.swift */,
-				C701EC921F7A8F9A00340AA9 /* AllFriendsCell.swift */,
-				C78FC0F31F82E6DC008ED17D /* FotoFriendsViewCell.swift */,
 				C78FC0F51F82E6F3008ED17D /* FotoFriendsViewController.swift */,
+				C78FC0F31F82E6DC008ED17D /* FotoFriendsViewCell.swift */,
 			);
 			name = Friends;
 			sourceTree = "<group>";
@@ -94,22 +98,35 @@
 			name = Groups;
 			sourceTree = "<group>";
 		};
+		C71BAF531F8E5789004E5461 /* AllFriends */ = {
+			isa = PBXGroup;
+			children = (
+				C701EC901F7A8F7400340AA9 /* AllFriendsController.swift */,
+				C701EC921F7A8F9A00340AA9 /* AllFriendsCell.swift */,
+			);
+			name = AllFriends;
+			sourceTree = "<group>";
+		};
 		C72CDE8E1F7E86D600ADB5BC /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				C72CDE8F1F7E882300ADB5BC /* VKLoginService.swift */,
+				C72CDE991F811A2E00ADB5BC /* StartViewController.swift */,
 				C72CDE911F7E886700ADB5BC /* VKFriendsService.swift */,
+				C72CDE8F1F7E882300ADB5BC /* VKPhotoService.swift */,
 				C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */,
+				C79AC5631F8E786B0021849A /* VKCountManGroupService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
 		};
-		C78FC0E71F82E270008ED17D /* Utils */ = {
+		C78FC0E71F82E270008ED17D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C78FC0E81F82E2C0008ED17D /* Utils.swift */,
+				C78FC0E81F82E2C0008ED17D /* Friend.swift */,
+				C71BAF561F8E5B67004E5461 /* Photo.swift */,
+				C71BAF541F8E5B52004E5461 /* Group.swift */,
 			);
-			name = Utils;
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		C78FC0EA1F82E3C9008ED17D /* My Groups */ = {
@@ -121,12 +138,12 @@
 			name = "My Groups";
 			sourceTree = "<group>";
 		};
-		C78FC0F71F82EBC0008ED17D /* Mock Data */ = {
+		C78FC0F71F82EBC0008ED17D /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				C78FC0F81F82EBF4008ED17D /* Mock Data.swift */,
+				C78FC0F81F82EBF4008ED17D /* RealmMethods.swift */,
 			);
-			name = "Mock Data";
+			name = Realm;
 			sourceTree = "<group>";
 		};
 		C79B394F1F6C15AF00AE9A02 = {
@@ -150,14 +167,14 @@
 		C79B395A1F6C15AF00AE9A02 /* VK */ = {
 			isa = PBXGroup;
 			children = (
-				C78FC0F71F82EBC0008ED17D /* Mock Data */,
-				C78FC0E71F82E270008ED17D /* Utils */,
+				C78FC0F71F82EBC0008ED17D /* Realm */,
+				C78FC0E71F82E270008ED17D /* Classes */,
 				C72CDE8E1F7E86D600ADB5BC /* Services */,
-				C701EC8F1F7A8F2D00340AA9 /* Groups */,
 				C78FC0EA1F82E3C9008ED17D /* My Groups */,
+				C701EC8F1F7A8F2D00340AA9 /* Groups */,
 				C701EC8E1F7A8F2300340AA9 /* Friends */,
+				C71BAF531F8E5789004E5461 /* AllFriends */,
 				C79B395B1F6C15AF00AE9A02 /* AppDelegate.swift */,
-				C72CDE991F811A2E00ADB5BC /* StartViewController.swift */,
 				C79B395F1F6C15AF00AE9A02 /* Main.storyboard */,
 				C79B39621F6C15AF00AE9A02 /* Assets.xcassets */,
 				C79B39641F6C15AF00AE9A02 /* LaunchScreen.storyboard */,
@@ -314,15 +331,18 @@
 				C701EC9D1F7A999700340AA9 /* AllGroupsController.swift in Sources */,
 				C72CDE941F7E88A100ADB5BC /* VKGroupsService.swift in Sources */,
 				C701EC9B1F7A965C00340AA9 /* MyGroupsController.swift in Sources */,
+				C71BAF551F8E5B52004E5461 /* Group.swift in Sources */,
+				C71BAF571F8E5B67004E5461 /* Photo.swift in Sources */,
 				C78FC0F41F82E6DC008ED17D /* FotoFriendsViewCell.swift in Sources */,
 				C72CDE9A1F811A2E00ADB5BC /* StartViewController.swift in Sources */,
+				C79AC5641F8E786B0021849A /* VKCountManGroupService.swift in Sources */,
 				C701EC911F7A8F7400340AA9 /* AllFriendsController.swift in Sources */,
 				C79B395C1F6C15AF00AE9A02 /* AppDelegate.swift in Sources */,
 				C72CDE921F7E886700ADB5BC /* VKFriendsService.swift in Sources */,
-				C72CDE901F7E882300ADB5BC /* VKLoginService.swift in Sources */,
+				C72CDE901F7E882300ADB5BC /* VKPhotoService.swift in Sources */,
 				C701EC931F7A8F9A00340AA9 /* AllFriendsCell.swift in Sources */,
-				C78FC0F91F82EBF4008ED17D /* Mock Data.swift in Sources */,
-				C78FC0E91F82E2C0008ED17D /* Utils.swift in Sources */,
+				C78FC0F91F82EBF4008ED17D /* RealmMethods.swift in Sources */,
+				C78FC0E91F82E2C0008ED17D /* Friend.swift in Sources */,
 				C701EC9F1F7A99AC00340AA9 /* AllGroupsCell.swift in Sources */,
 				C78FC0F61F82E6F3008ED17D /* FotoFriendsViewController.swift in Sources */,
 				C78FC0EE1F82E504008ED17D /* MyGroupsCell.swift in Sources */,

@@ -7,36 +7,38 @@
 //
 
 import UIKit
+//import AlamofireImage
+import Alamofire
+import RealmSwift
 
-
-private let reuseIdentifier = "Cell"
 
 class FotoMyFrendCollectionViewController: UICollectionViewController {
     
-    let vkService = VKLoginService()
+    var photos = [Photo]()
+    let photosRequest = PhotosRequest()
     
-    var firstName   = ""
-    var lastName    = ""
-    var bigPhotoURL = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = firstName + " " + lastName
+        loadData()
+        
+        photosRequest.loadPhotosData() { [weak self] in
+            self?.loadData()
+            self?.collectionView?.reloadData()
+        }
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 1
+       return photos.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -44,8 +46,23 @@ class FotoMyFrendCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FotoMyFrendCell", for: indexPath)
             as! FotoFriendsViewCell
         
-        cell.fotoFrend.setImageFromURl(stringImageUrl: bigPhotoURL)
+        let photo = photos[indexPath.row]
+        
+        guard let imgURL = URL(string: photo.photo) else { return cell }
+        //    cell.photo.af_setImage(withURL: imgURL) // хранит в кэше фотки, память течёт
+        Alamofire.request(imgURL).responseData { (response) in
+            cell.fotoFrend.image = UIImage(data: response.data!)
+        }
         return cell
+    }
+    func loadData() {
+        do {
+            let realm = try Realm()
+            let photos = realm.objects(Photo.self)
+            self.photos = Array(photos)
+        } catch {
+            print(error)
+        }
     }
 }
 

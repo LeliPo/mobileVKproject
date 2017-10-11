@@ -6,22 +6,28 @@
 //  Copyright © 2017  Алёна Бенецкая. All rights reserved.
 //
 import Foundation
-import RealmSwift
+import Alamofire
+import SwiftyJSON
 
-class VKGroupsService : Object  {
-   @objc  dynamic var id : UInt
-   @objc  dynamic var name : String
-   @objc  dynamic var description : String
-   @objc  dynamic var membersCount : Int
-   @objc  dynamic var photoURL : String
+class GroupsRequest {
+    let baseURL = "https://api.vk.com"
+    typealias loadGroupDataCompletion = ([Group]) -> ()
     
-   convenience init( _ group : Any) {
-    self.init()
-        let group  = group as! [String: Any]
-        self.id = group["gid"] as! UInt
-        self.name = group["name"] as! String
-        self.description = group["description"] as? String ?? ""
-        self.photoURL = group["photo"] as? String ?? ""
-        self.membersCount = group["members_count"] as? Int ?? 0
+    func loadGroupSearchData(completion: @escaping loadGroupDataCompletion) {
+        let path = "/method/groups.search"
+        let url = baseURL + path
+        
+        let parameters: Parameters = [
+            "q": userDefaults.string(forKey: "whatYouSearch") ?? print("no search"),
+            "type": "group",
+            "access_token": userDefaults.string(forKey: "token") ?? print("no Token")
+        ]
+        
+        Alamofire.request(url, parameters: parameters).responseJSON { response in
+            guard let data = response.value else { return }
+            let json = JSON(data)
+            let groups = json["response"].flatMap { Group(json: $0.1) }
+            completion(groups)
+        }
     }
 }

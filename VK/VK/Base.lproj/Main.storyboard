@@ -75,7 +75,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllGroupsCell" id="aMQ-kJ-gnN" customClass="AllGroupsCell" customModule="VK">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllGroupsCell" id="aMQ-kJ-gnN" customClass="AllGroupsCell" customModule="VK" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="aMQ-kJ-gnN" id="5L5-yY-pMw" colorLabel="IBBuiltInLabel-Red">
@@ -106,6 +106,7 @@
                                 <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="countManinGroups" destination="iwO-HJ-ej2" id="yHp-KH-V5Q"/>
+                                    <outlet property="groupFhoto" destination="BF1-gp-jHR" id="24p-oj-UTk"/>
                                     <outlet property="nameAllGroups" destination="qZ4-tI-QdQ" id="Yo6-GB-qZf"/>
                                     <segue destination="qtu-Ou-3Nn" kind="unwind" identifier="addGroup" unwindAction="addGroupWithSegue:" id="YCe-lk-oza"/>
                                 </connections>
