@@ -19,6 +19,9 @@
 		C72CDE921F7E886700ADB5BC /* VKFriendsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE911F7E886700ADB5BC /* VKFriendsService.swift */; };
 		C72CDE941F7E88A100ADB5BC /* VKGroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */; };
 		C72CDE9A1F811A2E00ADB5BC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE991F811A2E00ADB5BC /* StartViewController.swift */; };
+		C72DC3411F954655004274F5 /* MyWallController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72DC3401F954655004274F5 /* MyWallController.swift */; };
+		C72DC3451F9546BB004274F5 /* MyWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72DC3441F9546BB004274F5 /* MyWallCell.swift */; };
+		C72DC3471F954937004274F5 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72DC3461F954937004274F5 /* Wall.swift */; };
 		C78FC0E91F82E2C0008ED17D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0E81F82E2C0008ED17D /* Friend.swift */; };
 		C78FC0EE1F82E504008ED17D /* MyGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0ED1F82E504008ED17D /* MyGroupsCell.swift */; };
 		C78FC0F41F82E6DC008ED17D /* FotoFriendsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0F31F82E6DC008ED17D /* FotoFriendsViewCell.swift */; };
@@ -29,6 +32,7 @@
 		C79B39611F6C15AF00AE9A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79B395F1F6C15AF00AE9A02 /* Main.storyboard */; };
 		C79B39631F6C15AF00AE9A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79B39621F6C15AF00AE9A02 /* Assets.xcassets */; };
 		C79B39661F6C15AF00AE9A02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79B39641F6C15AF00AE9A02 /* LaunchScreen.storyboard */; };
+		C7DCB90B1F9502AF00A31845 /* WKWallServiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DCB90A1F9502AF00A31845 /* WKWallServiece.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,9 @@
 		C72CDE911F7E886700ADB5BC /* VKFriendsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKFriendsService.swift; sourceTree = "<group>"; };
 		C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKGroupsService.swift; sourceTree = "<group>"; };
 		C72CDE991F811A2E00ADB5BC /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		C72DC3401F954655004274F5 /* MyWallController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWallController.swift; sourceTree = "<group>"; };
+		C72DC3441F9546BB004274F5 /* MyWallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWallCell.swift; sourceTree = "<group>"; };
+		C72DC3461F954937004274F5 /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
 		C78FC0E81F82E2C0008ED17D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		C78FC0ED1F82E504008ED17D /* MyGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsCell.swift; sourceTree = "<group>"; };
 		C78FC0F31F82E6DC008ED17D /* FotoFriendsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoFriendsViewCell.swift; sourceTree = "<group>"; };
@@ -57,6 +64,7 @@
 		C79B39621F6C15AF00AE9A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C79B39651F6C15AF00AE9A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C79B39671F6C15AF00AE9A02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7DCB90A1F9502AF00A31845 /* WKWallServiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWallServiece.swift; sourceTree = "<group>"; };
 		EC9504ECD0C0D5CED3B2A292 /* Pods_VK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,9 +122,19 @@
 				C72CDE911F7E886700ADB5BC /* VKFriendsService.swift */,
 				C72CDE8F1F7E882300ADB5BC /* VKPhotoService.swift */,
 				C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */,
+				C7DCB90A1F9502AF00A31845 /* WKWallServiece.swift */,
 				C79AC5631F8E786B0021849A /* VKCountManGroupService.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		C72DC3391F951098004274F5 /* MyWall */ = {
+			isa = PBXGroup;
+			children = (
+				C72DC3401F954655004274F5 /* MyWallController.swift */,
+				C72DC3441F9546BB004274F5 /* MyWallCell.swift */,
+			);
+			name = MyWall;
 			sourceTree = "<group>";
 		};
 		C78FC0E71F82E270008ED17D /* Classes */ = {
@@ -124,6 +142,7 @@
 			children = (
 				C78FC0E81F82E2C0008ED17D /* Friend.swift */,
 				C71BAF561F8E5B67004E5461 /* Photo.swift */,
+				C72DC3461F954937004274F5 /* Wall.swift */,
 				C71BAF541F8E5B52004E5461 /* Group.swift */,
 			);
 			name = Classes;
@@ -173,6 +192,7 @@
 				C78FC0EA1F82E3C9008ED17D /* My Groups */,
 				C701EC8F1F7A8F2D00340AA9 /* Groups */,
 				C701EC8E1F7A8F2300340AA9 /* Friends */,
+				C72DC3391F951098004274F5 /* MyWall */,
 				C71BAF531F8E5789004E5461 /* AllFriends */,
 				C79B395B1F6C15AF00AE9A02 /* AppDelegate.swift */,
 				C79B395F1F6C15AF00AE9A02 /* Main.storyboard */,
@@ -333,11 +353,15 @@
 				C701EC9B1F7A965C00340AA9 /* MyGroupsController.swift in Sources */,
 				C71BAF551F8E5B52004E5461 /* Group.swift in Sources */,
 				C71BAF571F8E5B67004E5461 /* Photo.swift in Sources */,
+				C7DCB90B1F9502AF00A31845 /* WKWallServiece.swift in Sources */,
 				C78FC0F41F82E6DC008ED17D /* FotoFriendsViewCell.swift in Sources */,
 				C72CDE9A1F811A2E00ADB5BC /* StartViewController.swift in Sources */,
 				C79AC5641F8E786B0021849A /* VKCountManGroupService.swift in Sources */,
+				C72DC3471F954937004274F5 /* Wall.swift in Sources */,
+				C72DC3451F9546BB004274F5 /* MyWallCell.swift in Sources */,
 				C701EC911F7A8F7400340AA9 /* AllFriendsController.swift in Sources */,
 				C79B395C1F6C15AF00AE9A02 /* AppDelegate.swift in Sources */,
+				C72DC3411F954655004274F5 /* MyWallController.swift in Sources */,
 				C72CDE921F7E886700ADB5BC /* VKFriendsService.swift in Sources */,
 				C72CDE901F7E882300ADB5BC /* VKPhotoService.swift in Sources */,
 				C701EC931F7A8F9A00340AA9 /* AllFriendsCell.swift in Sources */,
