@@ -11,19 +11,23 @@ import RealmSwift
 import SwiftyJSON
 
 class Wall : Object {
-    @objc dynamic var name = ""
-    @objc dynamic var photo = ""
-    @objc dynamic var newsID = 0
-    @objc dynamic var text = ""
-    @objc dynamic  var groupName = ""
-    @objc dynamic var groupPhoto = ""
+    @objc dynamic var newsID: String = ""
+    @objc dynamic var text : String = ""
+    @objc dynamic var photo : String = ""
+    
+    override static func primaryKey() -> String? {
+        return "idNews"
+    }
+    
+
     convenience init(json: JSON) {
         self.init()
-        self.name = json["name"].stringValue
-        self.photo = json["attachments"]["photo"]["photo_75"].stringValue
-        self.newsID = json["id"].intValue
-        self.text = json["text"].stringValue
-        self.groupName = json["groups"]["name"].stringValue
-        self.groupPhoto = json["groups"]["photo_50"].stringValue
+       self.newsID = json["date"].stringValue + json["post_id"].stringValue
+         self.text = json["text"].stringValue
+        for (_,j) in json["attachments"] {
+            if j["type"].stringValue == "photo" {
+                self.photo = j["photo"]["photo_75"].stringValue
+            }
+        }
     }
 }

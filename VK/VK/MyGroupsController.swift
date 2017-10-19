@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import RealmSwift
+import Realm
 
 
 class MyGroupsController: UITableViewController {

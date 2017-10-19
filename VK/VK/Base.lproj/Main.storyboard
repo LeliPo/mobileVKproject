@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -191,7 +191,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="266" id="GSg-Xl-BzX" customClass="MyWallCell" customModule="VK" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyWallCell" rowHeight="266" id="GSg-Xl-BzX" customClass="MyWallCell" customModule="VK" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="266"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GSg-Xl-BzX" id="APr-KI-cjR">
@@ -226,12 +226,6 @@
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                         <rect key="frame" x="0.0" y="0.0" width="218" height="122"/>
                                                         <autoresizingMask key="autoresizingMask"/>
-                                                        <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KRp-Gl-Xkg">
-                                                                <rect key="frame" x="-11" y="-3" width="240" height="128"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            </imageView>
-                                                        </subviews>
                                                     </view>
                                                 </collectionViewCell>
                                             </cells>
@@ -247,7 +241,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="fotoFriendsNews" destination="ebv-R0-bhA" id="ESK-aM-3uF"/>
-                                    <outlet property="fotoNews" destination="KRp-Gl-Xkg" id="5n2-nc-j8U"/>
                                     <outlet property="nameFriendNews" destination="uBQ-lt-sJq" id="XzI-MZ-exY"/>
                                     <outlet property="textNews" destination="ba4-Hn-IuX" id="kof-oQ-eDH"/>
                                 </connections>

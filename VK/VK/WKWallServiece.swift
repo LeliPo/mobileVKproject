@@ -9,29 +9,51 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import RealmSwift
 
 class WallRequest {
     let baseURL = "https://api.vk.com"
-    typealias loadGroupDataCompletion = ([Wall]) -> ()
+    typealias loadWallDataCompletion = ([Wall]) -> Void
     
-    func loadGroupSearchData(completion: @escaping loadGroupDataCompletion) {
-        let path = "/method/wall.get"
+    func loadWallSearchData(completion: @escaping () -> ()) {
+        let path = "/method/newsfeed.get"
         let url = baseURL + path
         
         let parameters: Parameters = [
-            "owner_id": userDefaults.string(forKey: "whoIsYourFriend") ?? print("No ID"),
+            "access_token": userDefaults.string(forKey: "token") ?? print("no Token"),
+           // "owner_id": userDefaults.string(forKey: "yourNews") ?? print("No ID"),
             "count": "10",
-            "filter": "all",
-            "extended" : "1",
-            "fields" : "first_name, last_name, photo_50, name ",
-            "access_token": userDefaults.string(forKey: "token") ?? print("no Token")
+            "filters": "post, photo, photo_tag, wall_photo",
+           // "extended" : "1",
+         //   "fields" : "first_name, last_name, photo_50, name ",
+            "v": "5.68"
+            
         ]
         
         Alamofire.request(url, parameters: parameters).responseJSON { response in
             guard let data = response.value else { return }
             let json = JSON(data)
-            let news = json["response"].flatMap { Wall(json: $0.1) }
-            completion(news)
+            var news:[Wall] = [Wall]()
+            for (_, j) in json["response"]["items"] {
+                if "post" == j["type"].stringValue {
+                    news.append(Wall(json : j))
+                }
+            }
+            self.saveNewsData(news, count: news.count)
         }
     }
+    
+    func saveNewsData(_ news: [Wall], count: Int) {
+        do {
+            let realm = try Realm()
+            let oldNews = realm.objects(Wall.self)
+            realm.beginWrite()
+            if oldNews.count != count { realm.delete(oldNews) }
+            realm.add(news)
+            try realm.commitWrite()
+        } catch {
+            print(error)
+        }
+    }
+
 }
