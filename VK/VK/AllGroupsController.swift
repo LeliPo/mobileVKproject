@@ -9,41 +9,31 @@
 import UIKit
 import Alamofire
 
-class AllGroupsController: UITableViewController, UISearchBarDelegate {
+class SearchGroups: UITableViewController, UISearchBarDelegate {
     
-    let searchController = UISearchController(searchResultsController: nil)
-    var groupsRequest = GroupsRequest()
-    
-    var groups = [Group]()
-   
-    func searchBarIsEmpty() -> Bool {
-        return searchController.searchBar.text?.isEmpty ?? true
-    }
-    
-    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-        userDefaults.set(searchText, forKey: "whatYouSearch")
-        
-        groupsRequest.loadGroupSearchData() { [weak self] groups in
-            self?.groups = groups
-            self?.tableView.reloadData()
+    @IBOutlet weak var searchBar: UISearchBar!
+    {
+        didSet {
+            searchBar.delegate = self
         }
-        tableView.reloadData()
     }
     
-    func isFiltering() -> Bool {
-        return searchController.isActive && !searchBarIsEmpty()
+   var environment: Environment {
+        return EnvironmentImp.Debug()
     }
-//
-//    @IBOutlet weak var searchBarView: UISearchBar!
-//    var isSearching = false
+    
+    lazy var photoService = PhotoService(container: tableView)
+    
+    lazy var groupService: GroupService? = {
+        guard let tabs = navigationController?.tabBarController as? Tabs else { return nil}
+        let groupService = GroupService(environment: EnvironmentImp.Debug(), token: tabs.token)
+        return groupService
+    }()
+    
+    var groups: [Group] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = false
-        definesPresentationContext = true
-        tableView.tableHeaderView = searchController.searchBar
     }
     
     override func didReceiveMemoryWarning() {
@@ -56,33 +46,47 @@ class AllGroupsController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if isFiltering() {
             return groups.count
-        }
-        return 1
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllGroupsCell", for: indexPath) as! AllGroupsCell
         
-        if isFiltering() {
             let group = groups[indexPath.row]
             cell.nameAllGroups.text  = group.name
+            cell.countManinGroups.text = String(group.count)
+            cell.groupFhoto.image = photoService.photo(atIndexpath: indexPath, byUrl: group.photoUrl)
             
-            guard let imgURL = URL(string: group.photo) else { return cell }
-            Alamofire.request(imgURL).responseData { (response) in
-                cell.groupFhoto.image = UIImage(data: response.data!)
-            
-//            cell.countManinGroups.text = String(filterGroups[indexPath.row].membersCount)
-           
+              return cell
         }
-      }
-        return cell
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let id = groups[indexPath.row].id
+        groupService?.joinToGroup(groupID: id) { [weak self] in
+            self?.performSegue(withIdentifier: "addGroup", sender: nil)
+        }
     }
+    
 }
-extension AllGroupsController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        filterContentForSearchText(searchController.searchBar.text!)
+
+extension SearchGroups: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard
+            let text = searchBar.text,
+            !text.isEmpty else {
+                
+                tableView.reloadData()
+                return
+        }
+        searchGroups(request: text)
+        tableView.reloadData()
+    }
+    
+    func searchGroups(request: String) {
+        groupService?.searchGroups(request: request) { [weak self] groups in
+            self?.groups = groups
+            self?.tableView.reloadData()
+        }
     }
 }

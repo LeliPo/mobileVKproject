@@ -15,6 +15,13 @@
 		C701EC9F1F7A99AC00340AA9 /* AllGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C701EC9E1F7A99AC00340AA9 /* AllGroupsCell.swift */; };
 		C71BAF551F8E5B52004E5461 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71BAF541F8E5B52004E5461 /* Group.swift */; };
 		C71BAF571F8E5B67004E5461 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71BAF561F8E5B67004E5461 /* Photo.swift */; };
+		C72A5DCB1F9F7A3C00AC6BC2 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A5DCA1F9F7A3C00AC6BC2 /* Parser.swift */; };
+		C72A5DCD1F9F7A6300AC6BC2 /* ParserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A5DCC1F9F7A6300AC6BC2 /* ParserFactory.swift */; };
+		C72A5DD01F9F7AC900AC6BC2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A5DCF1F9F7AC900AC6BC2 /* Environment.swift */; };
+		C72A5DD21F9F7BF500AC6BC2 /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A5DD11F9F7BF500AC6BC2 /* RequestRouter.swift */; };
+		C72A5DD41F9F7D4A00AC6BC2 /* EnvironmentImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A5DD31F9F7D4A00AC6BC2 /* EnvironmentImp.swift */; };
+		C72A5DD71F9F818B00AC6BC2 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A5DD61F9F818B00AC6BC2 /* Tabs.swift */; };
+		C72A5DD91F9F81DF00AC6BC2 /* TabsImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A5DD81F9F81DF00AC6BC2 /* TabsImp.swift */; };
 		C72CDE901F7E882300ADB5BC /* VKPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE8F1F7E882300ADB5BC /* VKPhotoService.swift */; };
 		C72CDE921F7E886700ADB5BC /* VKFriendsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE911F7E886700ADB5BC /* VKFriendsService.swift */; };
 		C72CDE941F7E88A100ADB5BC /* VKGroupsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */; };
@@ -45,6 +52,13 @@
 		C701EC9E1F7A99AC00340AA9 /* AllGroupsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllGroupsCell.swift; sourceTree = "<group>"; };
 		C71BAF541F8E5B52004E5461 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		C71BAF561F8E5B67004E5461 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C72A5DCA1F9F7A3C00AC6BC2 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		C72A5DCC1F9F7A6300AC6BC2 /* ParserFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserFactory.swift; sourceTree = "<group>"; };
+		C72A5DCF1F9F7AC900AC6BC2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		C72A5DD11F9F7BF500AC6BC2 /* RequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
+		C72A5DD31F9F7D4A00AC6BC2 /* EnvironmentImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentImp.swift; sourceTree = "<group>"; };
+		C72A5DD61F9F818B00AC6BC2 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		C72A5DD81F9F81DF00AC6BC2 /* TabsImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsImp.swift; sourceTree = "<group>"; };
 		C72CDE8F1F7E882300ADB5BC /* VKPhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKPhotoService.swift; sourceTree = "<group>"; };
 		C72CDE911F7E886700ADB5BC /* VKFriendsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKFriendsService.swift; sourceTree = "<group>"; };
 		C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKGroupsService.swift; sourceTree = "<group>"; };
@@ -101,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				C701EC9C1F7A999700340AA9 /* AllGroupsController.swift */,
+				C78296941FA0AC4F0056B34D /* New Group */,
 				C701EC9E1F7A99AC00340AA9 /* AllGroupsCell.swift */,
 			);
 			name = Groups;
@@ -115,6 +130,33 @@
 			name = AllFriends;
 			sourceTree = "<group>";
 		};
+		C72A5DC91F9F7A2700AC6BC2 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				C72A5DCA1F9F7A3C00AC6BC2 /* Parser.swift */,
+				C72A5DCC1F9F7A6300AC6BC2 /* ParserFactory.swift */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		C72A5DCE1F9F7AB300AC6BC2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C72A5DCF1F9F7AC900AC6BC2 /* Environment.swift */,
+				C72A5DD31F9F7D4A00AC6BC2 /* EnvironmentImp.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		C72A5DD51F9F817400AC6BC2 /* TabsBar */ = {
+			isa = PBXGroup;
+			children = (
+				C72A5DD61F9F818B00AC6BC2 /* Tabs.swift */,
+				C72A5DD81F9F81DF00AC6BC2 /* TabsImp.swift */,
+			);
+			name = TabsBar;
+			sourceTree = "<group>";
+		};
 		C72CDE8E1F7E86D600ADB5BC /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +166,7 @@
 				C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */,
 				C7DCB90A1F9502AF00A31845 /* WKWallServiece.swift */,
 				C79AC5631F8E786B0021849A /* VKCountManGroupService.swift */,
+				C72A5DD11F9F7BF500AC6BC2 /* RequestRouter.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -135,6 +178,13 @@
 				C72DC3441F9546BB004274F5 /* MyWallCell.swift */,
 			);
 			name = MyWall;
+			sourceTree = "<group>";
+		};
+		C78296941FA0AC4F0056B34D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		C78FC0E71F82E270008ED17D /* Classes */ = {
@@ -187,12 +237,15 @@
 			isa = PBXGroup;
 			children = (
 				C78FC0F71F82EBC0008ED17D /* Realm */,
+				C72A5DCE1F9F7AB300AC6BC2 /* Config */,
+				C72A5DC91F9F7A2700AC6BC2 /* Parser */,
 				C78FC0E71F82E270008ED17D /* Classes */,
 				C72CDE8E1F7E86D600ADB5BC /* Services */,
 				C78FC0EA1F82E3C9008ED17D /* My Groups */,
 				C701EC8F1F7A8F2D00340AA9 /* Groups */,
 				C701EC8E1F7A8F2300340AA9 /* Friends */,
 				C72DC3391F951098004274F5 /* MyWall */,
+				C72A5DD51F9F817400AC6BC2 /* TabsBar */,
 				C71BAF531F8E5789004E5461 /* AllFriends */,
 				C79B395B1F6C15AF00AE9A02 /* AppDelegate.swift */,
 				C79B395F1F6C15AF00AE9A02 /* Main.storyboard */,
@@ -354,17 +407,24 @@
 				C71BAF551F8E5B52004E5461 /* Group.swift in Sources */,
 				C71BAF571F8E5B67004E5461 /* Photo.swift in Sources */,
 				C7DCB90B1F9502AF00A31845 /* WKWallServiece.swift in Sources */,
+				C72A5DCB1F9F7A3C00AC6BC2 /* Parser.swift in Sources */,
 				C78FC0F41F82E6DC008ED17D /* FotoFriendsViewCell.swift in Sources */,
 				C72CDE9A1F811A2E00ADB5BC /* StartViewController.swift in Sources */,
+				C72A5DD71F9F818B00AC6BC2 /* Tabs.swift in Sources */,
 				C79AC5641F8E786B0021849A /* VKCountManGroupService.swift in Sources */,
+				C72A5DD91F9F81DF00AC6BC2 /* TabsImp.swift in Sources */,
+				C72A5DD41F9F7D4A00AC6BC2 /* EnvironmentImp.swift in Sources */,
 				C72DC3471F954937004274F5 /* Wall.swift in Sources */,
 				C72DC3451F9546BB004274F5 /* MyWallCell.swift in Sources */,
+				C72A5DD21F9F7BF500AC6BC2 /* RequestRouter.swift in Sources */,
 				C701EC911F7A8F7400340AA9 /* AllFriendsController.swift in Sources */,
+				C72A5DCD1F9F7A6300AC6BC2 /* ParserFactory.swift in Sources */,
 				C79B395C1F6C15AF00AE9A02 /* AppDelegate.swift in Sources */,
 				C72DC3411F954655004274F5 /* MyWallController.swift in Sources */,
 				C72CDE921F7E886700ADB5BC /* VKFriendsService.swift in Sources */,
 				C72CDE901F7E882300ADB5BC /* VKPhotoService.swift in Sources */,
 				C701EC931F7A8F9A00340AA9 /* AllFriendsCell.swift in Sources */,
+				C72A5DD01F9F7AC900AC6BC2 /* Environment.swift in Sources */,
 				C78FC0F91F82EBF4008ED17D /* RealmMethods.swift in Sources */,
 				C78FC0E91F82E2C0008ED17D /* Friend.swift in Sources */,
 				C701EC9F1F7A99AC00340AA9 /* AllGroupsCell.swift in Sources */,

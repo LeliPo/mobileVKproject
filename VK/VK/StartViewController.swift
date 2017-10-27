@@ -8,6 +8,68 @@
 import Foundation
 import UIKit
 import WebKit
+import Alamofire
+
+struct AuthRouter {
+    
+    private let environment: Environment
+    
+    func login() -> URLRequestConvertible {
+        return Login(environment: environment)
+    }
+    
+    init(environment: Environment){
+        self.environment = environment
+    }
+    
+    private(set) lazy var notSingleton: NotSingleton = NotSingletonImp()
+}
+
+protocol NotSingleton {
+    func someAction()
+}
+
+extension AuthRouter {
+    
+       class NotSingletonImp: NotSingleton {
+        func someAction() {
+            
+        }
+    }
+    
+}
+
+extension AuthRouter {
+    
+        struct Login: RequestRouter {
+        
+        let environment: Environment
+        
+        init(environment: Environment) {
+            self.environment = environment
+        }
+        
+        var baseUrl: URL {
+            return environment.authBaseUrl
+        }
+        
+        let method: HTTPMethod = .get
+        
+        let path: String = "/authorize"
+        
+        var parameters: Parameters {
+            return [
+                "client_id": environment.clientId,
+                "display": "mobile",
+                "redirect_uri": "https://oauth.vk.com/blank.html",
+                "scope": "270342",
+                "response_type": "token",
+                "v": environment.apiVersion
+            ]
+        }
+    }
+    
+}
 
 
 
@@ -21,39 +83,66 @@ class StartViewController: UIViewController {
         }
     }
     
+    var environment: Environment {
+        return EnvironmentImp.Debug()
+    }
+    
+    lazy var router: AuthRouter = AuthRouter(environment: environment)
+    
+    var token = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var urlComponents = URLComponents()
-        urlComponents.scheme = "https"
-        urlComponents.host = "oauth.vk.com"
-        urlComponents.path = "/authorize"
-        urlComponents.queryItems = [
-            URLQueryItem(name: "client_id", value: "6205040"),
-            URLQueryItem(name: "display", value: "mobile"),
-            URLQueryItem(name: "redirect_uri", value: "https://oauth.vk.com/blank.html"),
-            URLQueryItem(name: "scope", value: "262150"),
-            URLQueryItem(name: "response_type", value: "token"),
-            URLQueryItem(name: "v", value: "5.68")
-        ]
-        
-        let request = URLRequest(url: urlComponents.url!)
-        //request.httpShouldHandleCookies = false
-        startWebVieW.load(request)
+        showLogin()
     }
+    
+    func showLogin() {
+        do {
+            let request = try router.login().asURLRequest()
+            startWebVieW.load(request)
+        } catch {
+            print(error)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toApp", let tabs = segue.destination as? TabsImp {
+            tabs.token = token
+        }
+    }
+    
 }
 
-
-extension StartViewController: WKNavigationDelegate {
-    
+extension AuthVC: WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
         
-        guard let url = navigationResponse.response.url, url.path == "/blank.html", let fragment = url.fragment  else {
-            decisionHandler(.allow)
+        guard
+            let url = navigationResponse.response.url,
+            url.path == "/blank.html",
+            let fragment = url.fragment else {
+                
+                decisionHandler(.allow)
+                return
+        }
+        
+        let params = parse(paramters: fragment)
+        
+        guard let token = params["access_token"] else {
+            print("токен не обнаружен")
             return
         }
         
-        let params = fragment
+        self.token = token
+        
+        decisionHandler(.cancel)
+        performSegue(withIdentifier: "toLoginPage", sender: nil)
+    }
+    
+    func parse(paramters: String) -> [String: String] {
+        
+        let params = paramters
             .components(separatedBy: "&")
             .map { $0.components(separatedBy: "=") }
             .reduce([String: String]()) { result, param in
@@ -64,14 +153,6 @@ extension StartViewController: WKNavigationDelegate {
                 return dict
         }
         
-        let token = params["access_token"]
-        userDefaults.set(token!, forKey: "token")
-        
-        performSegue(withIdentifier: "toLoginPage", sender: token)
-        
-        decisionHandler(.cancel)
-    }
-    
-    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
+        return params
     }
 }

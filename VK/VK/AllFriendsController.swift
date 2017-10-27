@@ -12,7 +12,7 @@ import RealmSwift
 
 class AllFriendsController: UITableViewController {
     
-    let friendRequest = FriendsRequest()
+    let friendRequest = AllFriendsController()
     var friends = [Friend]()
     
     override func viewDidLoad() {

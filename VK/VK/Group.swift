@@ -11,13 +11,16 @@ import SwiftyJSON
 import RealmSwift
 
 class Group: Object {
+    @objc dynamic var id = 0
     @objc dynamic var name = ""
-    @objc dynamic var photo = ""
-    @objc dynamic var groupID = 0
+    @objc dynamic var photoUrl = ""
+    @objc dynamic var count = 0
+    
     convenience init(json: JSON) {
         self.init()
-        self.name = json["name"].stringValue
-        self.photo = json["photo"].stringValue
-        self.groupID = json["gid"].intValue
+        name = json["name"].stringValue
+        photoUrl = json["photo_100"].stringValue
+        count = json["members_count"].intValue
+        id = json["id"].intValue
     }
 }

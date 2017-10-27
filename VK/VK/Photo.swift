@@ -11,9 +11,9 @@ import SwiftyJSON
 import RealmSwift
 
 class Photo: Object {
-    @objc dynamic var photo = ""
+    @objc dynamic var url = ""
     convenience init(json: JSON) {
         self.init()
-        self.photo = json["src_big"].stringValue
+        url = json["photo_130"].stringValue
     }
 }

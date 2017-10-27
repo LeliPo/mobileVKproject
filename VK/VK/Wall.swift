@@ -7,27 +7,16 @@
 //
 
 import Foundation
-import RealmSwift
-import SwiftyJSON
 
-class Wall : Object {
-    @objc dynamic var newsID: String = ""
-    @objc dynamic var text : String = ""
-    @objc dynamic var photo : String = ""
-    
-    override static func primaryKey() -> String? {
-        return "idNews"
-    }
-    
-
-    convenience init(json: JSON) {
-        self.init()
-       self.newsID = json["date"].stringValue + json["post_id"].stringValue
-         self.text = json["text"].stringValue
-        for (_,j) in json["attachments"] {
-            if j["type"].stringValue == "photo" {
-                self.photo = j["photo"]["photo_75"].stringValue
-            }
-        }
-    }
+class Wall {
+    var id = 0
+    var sourceId = 0
+    var likesCount = 0
+    var repostsCount = 0
+    var commentsCount = 0
+    var viewsCount = 0
+    var text = ""
+    var photoLink: String?
+    var user: Friend?
+    var group: Group?
 }

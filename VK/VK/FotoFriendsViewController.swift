@@ -14,54 +14,62 @@ import RealmSwift
 
 class FotoMyFrendCollectionViewController: UICollectionViewController {
     
+        var userId = 0
+    
+    var environment: Environment {
+        return EnvironmentImp.Debug()
+    }
+    
+    lazy var photoService = PhotoService(container: collectionView!)
+    
+    lazy var friendService: FriendService? = {
+        guard let tabs = navigationController?.tabBarController as? Tabs else { return nil}
+        let FriendService = FriendService(environment: EnvironmentImp.Debug(), token: tabs.token)
+        return FriendService
+    }()
+    
     var photos = [Photo]()
-    let photosRequest = PhotosRequest()
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
         
-        photosRequest.loadPhotosData() { [weak self] in
-            self?.loadData()
-            self?.collectionView?.reloadData()
-        }
+        showUPhoto()
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
     }
-    
+    */
+
+    // MARK: UICollectionViewDataSource
+
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-    
-    
+
+
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-       return photos.count
+        return photos.count
     }
-    
+
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as! FotoFriendsViewCell
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FotoMyFrendCell", for: indexPath)
-            as! FotoFriendsViewCell
         
-        let photo = photos[indexPath.row]
-        
-        guard let imgURL = URL(string: photo.photo) else { return cell }
-        //    cell.photo.af_setImage(withURL: imgURL) // хранит в кэше фотки, память течёт
-        Alamofire.request(imgURL).responseData { (response) in
-            cell.fotoFrend.image = UIImage(data: response.data!)
-        }
+        cell.fotoFrend.image = photoService.photo(atIndexpath: indexPath, byUrl: photos[indexPath.row].url)
+    
         return cell
     }
-    func loadData() {
-        do {
-            let realm = try Realm()
-            let photos = realm.objects(Photo.self)
-            self.photos = Array(photos)
-        } catch {
-            print(error)
+    
+    func showUPhoto() {
+        friendService?.downloadPhoto(forUser: userId) { [weak self] photos in
+            self?.photos = photos
+            self?.collectionView?.reloadData()
         }
     }
 }

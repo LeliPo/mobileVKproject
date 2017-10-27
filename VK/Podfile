@@ -6,7 +6,7 @@ target 'VK' do
     use_frameworks!
     pod 'Alamofire', '~> 4.5'
     pod 'SwiftyJSON'
-    pod 'RealmSwift', '~> 2.10.2'  
+    pod 'RealmSwift'
     
     # Pods for VK
     

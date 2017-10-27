@@ -10,19 +10,16 @@ import UIKit
 
 class MyWallCell: UITableViewCell {
 
-    @IBOutlet weak var textNews: UILabel!
-    @IBOutlet weak var fotoNews: UIImageView!
-    @IBOutlet weak var fotoFriendsNews: UIImageView!
-    @IBOutlet weak var nameFriendNews: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    @IBOutlet weak var textNew: UITextView!
+    
+    @IBOutlet weak var autorName: UILabel!
+    @IBOutlet weak var autorAvatar: UIImageView!
+    @IBOutlet weak var photoNew: UIImageView!
+    
+    @IBOutlet weak var commentCount: UILabel!
+    @IBOutlet weak var likeCount: UILabel!
+    @IBOutlet weak var repostCount: UILabel!
+    @IBOutlet weak var viewsCount: UILabel!
+   
 
 }

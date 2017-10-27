@@ -8,55 +8,127 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 import RealmSwift
 
-class FriendsRequest {
-    let baseURL = "https://api.vk.com"
-    typealias loadFriendsDataCompletion = ([Friend]) -> Void
+struct FriendService {
     
-    func loadFriendsData(completion: @escaping () -> () ) {
-        let path = "/method/friends.get"
-        let url = baseURL + path
-        
-        let parameters: Parameters = [
-            "access_token": userDefaults.string(forKey: "token") ?? print("no Token"),
-            "order": "name",
-            "fields": "city,nickname,photo_50",
-            "name_case": "nom",
-            "version": "5.68",
-            ]
-        
-        Alamofire.request(url, parameters: parameters).responseData { [weak self] response in // без SwiftyJSON
-            let json = try! JSONSerialization.jsonObject(with: response.value!, options: JSONSerialization.ReadingOptions.mutableContainers)
+    private let router: UserRouter
+    
+    init(environment: Environment, token: String) {
+        router = UserRouter(environment: environment, token: token)
+    }
+    
+    func dowloadFriends() {
+        Alamofire.request(router.userList()).responseData { response in
             
-            var friends = [Friend]()
-            
-            let dict = json as! [String: Any]
-            for (_, array) in dict {
-                for value in array as! [Any] {
-                    let userJSON = value as! [String:Any]
-                    let firstName = userJSON["first_name"] as! String
-                    let lastName = userJSON["last_name"] as! String
-                    let photoAvatar = userJSON["photo_50"] as! String
-                    let userID = userJSON["user_id"] as! Int
-                    friends.append(Friend(firstName: firstName, lastName: lastName, photoAvatar: photoAvatar, userID: userID))
-                }
-            }
-            self?.saveFriendsData(friends, count: friends.count)
-            completion()
+            guard let data = response.value else { return }
+            let json = JSON(data: data)
+            let users = json["response"]["items"].array?.flatMap { Friend(json: $0) } ?? []
+            Realm.replaceAllObjectOfType(toNewObjects: users)
         }
     }
     
-    func saveFriendsData(_ friends: [Friend], count: Int) {
+    func downloadPhoto(forUser user: Int, completion: @escaping ([Photo]) -> Void) {
+        Alamofire.request(router.userPhotoList(ownerId: user)).responseData { response in
+            
+            guard let data = response.value else { return }
+            let json = JSON(data: data)
+            let photos = json["response"]["items"].array?.flatMap { Photo(json: $0) } ?? []
+            completion(photos)
+        }
+    }
+    
+    func loadFriends() -> [Friend] {
         do {
             let realm = try Realm()
-            let oldFriends = realm.objects(Friend.self)
-            realm.beginWrite()
-            if oldFriends.count != count { realm.delete(oldFriends) }
-            realm.add(friends)
-            try realm.commitWrite()
+            return Array(realm.objects(Friend.self))
         } catch {
             print(error)
+            return []
+        }
+    }
+
+}
+
+struct UserRouter {
+    
+    private let environment: Environment
+    private let token: String
+    
+    func userList() -> URLRequestConvertible {
+        return UserList(environment: environment, token: token)
+    }
+    
+    func userPhotoList(ownerId: Int) -> URLRequestConvertible {
+        return UserPhotoList(environment: environment, token: token, ownerId: ownerId)
+    }
+    
+    init(environment: Environment, token: String){
+        self.environment = environment
+        self.token = token
+    }
+}
+
+extension UserRouter {
+    
+        struct UserList: RequestRouter {
+        let environment: Environment
+        let token: String
+        
+        init(environment: Environment, token: String) {
+            self.environment = environment
+            self.token = token
+        }
+        
+        var baseUrl: URL {
+            return environment.baseUrl
+        }
+        
+        let method: HTTPMethod = .get
+        
+        var path = "/method/friends.get"
+        
+        var parameters: Parameters {
+            return [
+                "access_token": token,
+                "v": environment.apiVersion,
+                "fields":"nickname,domain,photo_50"
+            ]
         }
     }
 }
+
+extension UserRouter {
+    
+        struct UserPhotoList: RequestRouter {
+        let environment: Environment
+        let token: String
+        let ownerId: Int
+        
+        init(environment: Environment, token: String, ownerId: Int) {
+            self.environment = environment
+            self.token = token
+            self.ownerId = ownerId
+        }
+        
+        var baseUrl: URL {
+            return environment.baseUrl
+        }
+        
+        var method: HTTPMethod = .get
+        
+        var path = "/method/photos.getAll"
+        
+        var parameters: Parameters {
+            return [
+                "owner_id": ownerId,
+                "access_token": token,
+                "v": environment.apiVersion,
+                "fields":"nickname,domain,photo_50"
+            ]
+        }
+    }
+    
+}
+
