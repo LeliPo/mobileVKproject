@@ -16,7 +16,7 @@ class Wall : Object {
     @objc dynamic var photo : String = ""
     
     override static func primaryKey() -> String? {
-        return "idNews"
+        return "newsID"
     }
     
 
