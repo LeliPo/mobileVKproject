@@ -11,7 +11,12 @@ import UIKit
 class MyWallCell: UITableViewCell {
 
     @IBOutlet weak var textNews: UILabel!
-    @IBOutlet weak var fotoNews: UIImageView!
+
+    @IBOutlet weak var viewsCount: UILabel!
+    @IBOutlet weak var countComents: UILabel!
+    @IBOutlet weak var countLike: UILabel!
+    @IBOutlet weak var countRepost: UILabel!
+    @IBOutlet weak var photoNews: UIImageView!
     @IBOutlet weak var fotoFriendsNews: UIImageView!
     @IBOutlet weak var nameFriendNews: UILabel!
     override func awakeFromNib() {
