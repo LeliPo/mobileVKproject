@@ -21,26 +21,45 @@ class WallRequest {
         
         let parameters: Parameters = [
             "access_token": userDefaults.string(forKey: "token") ?? print("no Token"),
-           // "owner_id": userDefaults.string(forKey: "yourNews") ?? print("No ID"),
+            "owner_id": userDefaults.string(forKey: "yourNews") ?? print("No ID"),
             "count": "10",
-            "filters": "post, photo, photo_tag, wall_photo",
+            "filters": "post, photo",
            // "extended" : "1",
          //   "fields" : "first_name, last_name, photo_50, name ",
             "v": "5.68"
             
         ]
         
-        Alamofire.request(url, parameters: parameters).responseJSON { response in
-            guard let data = response.value else { return }
-            let json = JSON(data)
-            var news:[Wall] = [Wall]()
-            for (_, j) in json["response"]["items"] {
-                if "post" == j["type"].stringValue {
-                    news.append(Wall(json : j))
-                }
+      //  let router: NewsRouter
+        let parser: JsonParser = ParserFactory().newsFeed()
+        
+            
+            Alamofire.request(url, parameters: parameters).responseData(queue: .global(qos: .userInteractive)) { response in
+                guard let data = response.value else { return }
+                let json = JSON(data: data)
+                let news = parser.parse(json) as? [Wall]
+//                DispatchQueue.main.async {
+//                    completion(news ?? [])
+//                }
+                
+                self.saveNewsData(news!, count: news!.count)
+               
+                
             }
-            self.saveNewsData(news, count: news.count)
-        }
+        
+        
+//        Alamofire.request(url, parameters: parameters).responseJSON { response in
+//            guard let data = response.value else { return }
+//            print(data)
+//            let json = JSON(data)
+//            var news:[Wall] = [Wall]()
+//            for (_, j) in json["response"]["items"] {
+//                if "post" == j["type"].stringValue {
+//                    news.append(Wall(json : j))
+//                }
+//            }
+//            self.saveNewsData(news, count: news.count)
+//        }
     }
     
     func saveNewsData(_ news: [Wall], count: Int) {

@@ -14,10 +14,13 @@ class Group: Object {
     @objc dynamic var name = ""
     @objc dynamic var photo = ""
     @objc dynamic var groupID = 0
+    @objc dynamic var count = 0
+    
     convenience init(json: JSON) {
         self.init()
-        self.name = json["name"].stringValue
-        self.photo = json["photo"].stringValue
-        self.groupID = json["gid"].intValue
+        name = json["name"].stringValue
+        photo = json["photo_100"].stringValue
+        groupID = json["id"].intValue
+        count = json["members_count"].intValue
     }
 }
