@@ -10,8 +10,7 @@ import UIKit
 
 class MyWallCell: UITableViewCell {
 
-    @IBOutlet weak var textNews: UILabel!
-
+    @IBOutlet weak var textNews: UITextView!
     @IBOutlet weak var viewsCount: UILabel!
     @IBOutlet weak var countComents: UILabel!
     @IBOutlet weak var countLike: UILabel!

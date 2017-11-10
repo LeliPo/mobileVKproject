@@ -24,13 +24,11 @@ class WallRequest {
             "owner_id": userDefaults.string(forKey: "yourNews") ?? print("No ID"),
             "count": "10",
             "filters": "post, photo",
-           // "extended" : "1",
-         //   "fields" : "first_name, last_name, photo_50, name ",
             "v": "5.68"
             
         ]
         
-      //  let router: NewsRouter
+      
         let parser: JsonParser = ParserFactory().newsFeed()
         
             

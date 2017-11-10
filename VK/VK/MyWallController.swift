@@ -58,8 +58,8 @@ class MyWallController: UITableViewController {
             autorName = group.name
             autorAvatarUrl = group.photo
         } else if let user = newsOne.user {
-            autorName = user.fullName
-            autorAvatarUrl = user.photoUrl
+            autorName = user.firstName + user.lastName
+            autorAvatarUrl = user.photoAvatar
         }
         
         cell.textNews.text = newsOne.text

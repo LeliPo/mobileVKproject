@@ -34,7 +34,7 @@ extension ParserFactory {
             "video": "video"
         ]
         
-        let jsonToNew = { (json: JSON, groups: [Group], users: [User]) -> Wall in
+        let jsonToNew = { (json: JSON, groups: [Group], users: [Friend]) -> Wall in
             var new = Wall()
             let type = json["type"].stringValue
             
@@ -56,7 +56,7 @@ extension ParserFactory {
             new.photoLink = json["photo_130"].string
             
             if new.sourceId > 0 {
-                new.user = users.filter { $0.id == new.sourceId }.first
+                new.user = users.filter { $0.userID == new.sourceId }.first
             } else {
                 new.group = groups.filter { $0.groupID == abs(new.sourceId) }.first
             }
@@ -66,7 +66,7 @@ extension ParserFactory {
         
         func parse(_ json: JSON) -> [AnyObject] {
             let groups = json["response"]["groups"].map { Group(json: $0.1) }
-            let users = json["response"]["profiles"].map { User(json: $0.1) }
+            let users = json["response"]["profiles"].map { Friend(json: $0.1) }
             return json["response"]["items"].flatMap { jsonToNew($0.1, groups, users) }
         }
         

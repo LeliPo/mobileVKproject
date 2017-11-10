@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import RealmSwift
+import SwiftyJSON
 
 class FriendsRequest {
     let baseURL = "https://api.vk.com"
@@ -26,24 +27,12 @@ class FriendsRequest {
             "version": "5.68",
             ]
         
-        Alamofire.request(url, parameters: parameters).responseData { [weak self] response in // без SwiftyJSON
-            let json = try! JSONSerialization.jsonObject(with: response.value!, options: JSONSerialization.ReadingOptions.mutableContainers)
-            
-            var friends = [Friend]()
-            
-            let dict = json as! [String: Any]
-            for (_, array) in dict {
-                for value in array as! [Any] {
-                    let userJSON = value as! [String:Any]
-                    let firstName = userJSON["first_name"] as! String
-                    let lastName = userJSON["last_name"] as! String
-                    let photoAvatar = userJSON["photo_50"] as! String
-                    let userID = userJSON["user_id"] as! Int
-                    friends.append(Friend(firstName: firstName, lastName: lastName, photoAvatar: photoAvatar, userID: userID))
-                }
-            }
-            self?.saveFriendsData(friends, count: friends.count)
-            completion()
+        Alamofire.request(url, parameters: parameters).responseJSON { response in
+            guard let data = response.value else { return }
+            let json = JSON(data)
+            let friends = json["response"].flatMap { Friend(json: $0.1) }
+            self.saveFriendsData(friends, count: friends.count)
+            //completion(friends)
         }
     }
     

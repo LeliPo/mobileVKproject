@@ -19,6 +19,6 @@ class Wall : Object {
    @objc dynamic var viewsCount = 0
    @objc dynamic var text = ""
    @objc dynamic var photoLink: String?
-   @objc dynamic var user: User?
+   @objc dynamic var user: Friend?
    @objc dynamic var group: Group?
 }

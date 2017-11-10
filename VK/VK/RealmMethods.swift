@@ -61,5 +61,22 @@ class RealmMethods {
         }
     }
 }
-
+extension RealmMethods {
+    
+    static func replaceAllObjectOfType<T: Object>(toNewObjects objects: [T]) {
+        do {
+            let realm = try Realm()
+            let oldObjects =  realm.objects(T.self)
+            
+            realm.beginWrite()
+            realm.delete(oldObjects)
+            realm.add(objects)
+            
+            try realm.commitWrite()
+        } catch {
+            print(error)
+        }
+    }
+    
+}
 
