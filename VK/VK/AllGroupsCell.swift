@@ -14,8 +14,6 @@ class AllGroupsCell: UITableViewCell {
     @IBOutlet weak var nameAllGroups: UILabel!
     @IBOutlet weak var countManinGroups: UILabel!
     @IBOutlet weak var groupFhoto: UIImageView!
-    
-   
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,5 +22,4 @@ class AllGroupsCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
 }

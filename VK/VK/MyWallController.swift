@@ -16,11 +16,8 @@ import RealmSwift
 
 class MyWallController: UITableViewController {
 
-   //var newsMy : Results<Wall>?
     var newsMy = [Wall]()
     let newsRequest = WallRequest()
-    
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +29,6 @@ class MyWallController: UITableViewController {
             self?.loadData()
             self?.tableView.reloadData()
         }
-        //tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +43,6 @@ class MyWallController: UITableViewController {
         return newsMy.count
     }
 
-   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyWallCell", for: indexPath) as! MyWallCell
         let newsOne = newsMy[indexPath.row]
@@ -69,33 +64,20 @@ class MyWallController: UITableViewController {
         cell.countRepost.text = String(describing: newsOne.repostsCount)
         cell.viewsCount.text = String(describing: newsOne.likesCount)
         
-       // print(newsOne)
-        
-        if let mainPhotoUrl = newsOne.photoLink {
-            guard let imgURL = URL(string: mainPhotoUrl) else {return cell}
+        let mainPhotoUrl = newsOne.photoLink
+        print (mainPhotoUrl)
+      if mainPhotoUrl != nil {
+        guard let imgURL = URL(string: mainPhotoUrl!) else {return cell}
             Alamofire.request(imgURL).responseData { (response) in
                 cell.photoNews.image = UIImage(data: response.data!)}
         } else {
             cell.photoNews.image = nil
         }
-        
-        
+
         guard let imgURL = URL(string: autorAvatarUrl) else {return cell}
         Alamofire.request(imgURL).responseData { (response) in
         cell.fotoFriendsNews.image =  UIImage(data: response.data!)
         }
-        
- 
-        
-        
-  
-        print(newsOne)
-        print(newsMy)
-//        guard let imgURL = URL(string: autorAvatarUrl) else {return cell}
-//        Alamofire.request(imgURL).responseData { (response) in
-//           cell.photoNews.image = UIImage(data: response.data!)
-//        }
-
         return cell
     }
 
@@ -115,33 +97,4 @@ class MyWallController: UITableViewController {
             print(error)
         }
     }
-    
-//    func  pairTableAndRealm() {
-//        do {
-//            let realm = try Realm()
-//            newsMy = realm.objects(Wall.self)
-//            token = newsMy?.addNotificationBlock { [weak self] (changes: RealmCollectionChange) in
-//                guard let tableView = self?.tableView else { return }
-//                switch changes {
-//                case .initial:
-//                    tableView.reloadData()
-//                case .update(_, let deletions, let insertions, let modifications):
-//                    tableView.beginUpdates()
-//                    tableView.insertRows(at: insertions.map({ IndexPath(row: $0, section: 0) }),
-//                                         with: .automatic)
-//                    tableView.deleteRows(at: deletions.map({ IndexPath(row: $0, section: 0)}),
-//                                         with: .automatic)
-//                    tableView.reloadRows(at: modifications.map({ IndexPath(row: $0, section: 0) }),
-//                                         with: .automatic)
-//                    tableView.endUpdates()
-//
-//                case .error(let error):
-//                    fatalError("\(error)")
-//                    break
-//                }
-//            }
-//        } catch {
-//            print(error)
-//        }
-//    }
 }

@@ -38,7 +38,6 @@ class StartViewController: UIViewController {
         ]
         
         let request = URLRequest(url: urlComponents.url!)
-        //request.httpShouldHandleCookies = false
         startWebVieW.load(request)
     }
 }

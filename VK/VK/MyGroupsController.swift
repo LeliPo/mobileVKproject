@@ -52,8 +52,6 @@ class MyGroupsController: UITableViewController {
         Alamofire.request(imgURL).responseData { (response) in
             cell.avatarMyGroup.image = UIImage(data: response.data!)
         }
-        //cell.avatarMyGroup?.setImageFromURl(stringImageUrl: myGroups[indexPath.row].photoURL)
-        
         return cell
     }
     

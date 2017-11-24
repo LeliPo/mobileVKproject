@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//import AlamofireImage
 import Alamofire
 import RealmSwift
 
@@ -17,16 +16,16 @@ class FotoMyFrendCollectionViewController: UICollectionViewController {
     var photos = [Photo]()
     let photosRequest = PhotosRequest()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
         
         photosRequest.loadPhotosData() { [weak self] in
             self?.loadData()
-            self?.collectionView?.reloadData()
+                self?.collectionView?.reloadData()
         }
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -34,8 +33,7 @@ class FotoMyFrendCollectionViewController: UICollectionViewController {
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
-    
-    
+
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
        return photos.count
@@ -47,14 +45,15 @@ class FotoMyFrendCollectionViewController: UICollectionViewController {
             as! FotoFriendsViewCell
         
         let photo = photos[indexPath.row]
+        print(photo)
         
         guard let imgURL = URL(string: photo.photo) else { return cell }
-        //    cell.photo.af_setImage(withURL: imgURL) // хранит в кэше фотки, память течёт
         Alamofire.request(imgURL).responseData { (response) in
             cell.fotoFrend.image = UIImage(data: response.data!)
         }
         return cell
     }
+    
     func loadData() {
         do {
             let realm = try Realm()

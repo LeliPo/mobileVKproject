@@ -25,7 +25,9 @@ class AllGroupsController: UITableViewController, UISearchBarDelegate {
         
         groupsRequest.loadGroupSearchData() { [weak self] groups in
             self?.groups = groups
-            self?.tableView.reloadData()
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
         }
         tableView.reloadData()
     }
@@ -33,9 +35,6 @@ class AllGroupsController: UITableViewController, UISearchBarDelegate {
     func isFiltering() -> Bool {
         return searchController.isActive && !searchBarIsEmpty()
     }
-//
-//    @IBOutlet weak var searchBarView: UISearchBar!
-//    var isSearching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,14 +72,13 @@ class AllGroupsController: UITableViewController, UISearchBarDelegate {
             guard let imgURL = URL(string: group.photo) else { return cell }
             Alamofire.request(imgURL).responseData { (response) in
                 cell.groupFhoto.image = UIImage(data: response.data!)
-            
-//            cell.countManinGroups.text = String(filterGroups[indexPath.row].membersCount)
-           
         }
       }
         return cell
     }
 }
+
+
 extension AllGroupsController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)

@@ -34,7 +34,6 @@ class AllFriendsController: UITableViewController {
         return friends.count
     }
     
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AllFrendsCell", for: indexPath) as! AllFriendsCell
         let friend = friends[indexPath.row]
@@ -44,7 +43,6 @@ class AllFriendsController: UITableViewController {
         Alamofire.request(imgURL).responseData { (response) in
             cell.friendsAvatar.image = UIImage(data: response.data!)
         }
-        
         return cell
     }
     

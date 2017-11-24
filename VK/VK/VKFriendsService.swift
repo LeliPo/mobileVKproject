@@ -27,12 +27,11 @@ class FriendsRequest {
             "version": "5.68",
             ]
         
-        Alamofire.request(url, parameters: parameters).responseJSON { response in
+        Alamofire.request(url, parameters: parameters).responseData(queue: .global(qos: .userInteractive)) { response in
             guard let data = response.value else { return }
             let json = JSON(data)
             let friends = json["response"].flatMap { Friend(json: $0.1) }
             self.saveFriendsData(friends, count: friends.count)
-            //completion(friends)
         }
     }
     

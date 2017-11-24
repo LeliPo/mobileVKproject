@@ -22,15 +22,12 @@
 		C72DC3411F954655004274F5 /* MyWallController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72DC3401F954655004274F5 /* MyWallController.swift */; };
 		C72DC3451F9546BB004274F5 /* MyWallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72DC3441F9546BB004274F5 /* MyWallCell.swift */; };
 		C72DC3471F954937004274F5 /* Wall.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72DC3461F954937004274F5 /* Wall.swift */; };
-		C767795E1FACB12E00EF25F9 /* newsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C767795D1FACB12E00EF25F9 /* newsService.swift */; };
 		C76779651FACB1D600EF25F9 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76779641FACB1D600EF25F9 /* Parser.swift */; };
-		C76779691FACB2E400EF25F9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76779681FACB2E400EF25F9 /* User.swift */; };
 		C78FC0E91F82E2C0008ED17D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0E81F82E2C0008ED17D /* Friend.swift */; };
 		C78FC0EE1F82E504008ED17D /* MyGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0ED1F82E504008ED17D /* MyGroupsCell.swift */; };
 		C78FC0F41F82E6DC008ED17D /* FotoFriendsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0F31F82E6DC008ED17D /* FotoFriendsViewCell.swift */; };
 		C78FC0F61F82E6F3008ED17D /* FotoFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0F51F82E6F3008ED17D /* FotoFriendsViewController.swift */; };
 		C78FC0F91F82EBF4008ED17D /* RealmMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78FC0F81F82EBF4008ED17D /* RealmMethods.swift */; };
-		C79AC5641F8E786B0021849A /* VKCountManGroupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79AC5631F8E786B0021849A /* VKCountManGroupService.swift */; };
 		C79B395C1F6C15AF00AE9A02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79B395B1F6C15AF00AE9A02 /* AppDelegate.swift */; };
 		C79B39611F6C15AF00AE9A02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C79B395F1F6C15AF00AE9A02 /* Main.storyboard */; };
 		C79B39631F6C15AF00AE9A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C79B39621F6C15AF00AE9A02 /* Assets.xcassets */; };
@@ -55,15 +52,12 @@
 		C72DC3401F954655004274F5 /* MyWallController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWallController.swift; sourceTree = "<group>"; };
 		C72DC3441F9546BB004274F5 /* MyWallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWallCell.swift; sourceTree = "<group>"; };
 		C72DC3461F954937004274F5 /* Wall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wall.swift; sourceTree = "<group>"; };
-		C767795D1FACB12E00EF25F9 /* newsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsService.swift; sourceTree = "<group>"; };
 		C76779641FACB1D600EF25F9 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
-		C76779681FACB2E400EF25F9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C78FC0E81F82E2C0008ED17D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		C78FC0ED1F82E504008ED17D /* MyGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsCell.swift; sourceTree = "<group>"; };
 		C78FC0F31F82E6DC008ED17D /* FotoFriendsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoFriendsViewCell.swift; sourceTree = "<group>"; };
 		C78FC0F51F82E6F3008ED17D /* FotoFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoFriendsViewController.swift; sourceTree = "<group>"; };
 		C78FC0F81F82EBF4008ED17D /* RealmMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmMethods.swift; sourceTree = "<group>"; };
-		C79AC5631F8E786B0021849A /* VKCountManGroupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKCountManGroupService.swift; sourceTree = "<group>"; };
 		C79B39581F6C15AF00AE9A02 /* VK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79B395B1F6C15AF00AE9A02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C79B39601F6C15AF00AE9A02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,8 +123,6 @@
 				C72CDE8F1F7E882300ADB5BC /* VKPhotoService.swift */,
 				C72CDE931F7E88A100ADB5BC /* VKGroupsService.swift */,
 				C7DCB90A1F9502AF00A31845 /* WKWallServiece.swift */,
-				C79AC5631F8E786B0021849A /* VKCountManGroupService.swift */,
-				C767795D1FACB12E00EF25F9 /* newsService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -156,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				C78FC0E81F82E2C0008ED17D /* Friend.swift */,
-				C76779681FACB2E400EF25F9 /* User.swift */,
 				C71BAF561F8E5B67004E5461 /* Photo.swift */,
 				C72DC3461F954937004274F5 /* Wall.swift */,
 				C71BAF541F8E5B52004E5461 /* Group.swift */,
@@ -365,7 +356,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C76779691FACB2E400EF25F9 /* User.swift in Sources */,
 				C701EC9D1F7A999700340AA9 /* AllGroupsController.swift in Sources */,
 				C72CDE941F7E88A100ADB5BC /* VKGroupsService.swift in Sources */,
 				C701EC9B1F7A965C00340AA9 /* MyGroupsController.swift in Sources */,
@@ -374,7 +364,6 @@
 				C7DCB90B1F9502AF00A31845 /* WKWallServiece.swift in Sources */,
 				C78FC0F41F82E6DC008ED17D /* FotoFriendsViewCell.swift in Sources */,
 				C72CDE9A1F811A2E00ADB5BC /* StartViewController.swift in Sources */,
-				C79AC5641F8E786B0021849A /* VKCountManGroupService.swift in Sources */,
 				C72DC3471F954937004274F5 /* Wall.swift in Sources */,
 				C72DC3451F9546BB004274F5 /* MyWallCell.swift in Sources */,
 				C701EC911F7A8F7400340AA9 /* AllFriendsController.swift in Sources */,
@@ -384,7 +373,6 @@
 				C72CDE901F7E882300ADB5BC /* VKPhotoService.swift in Sources */,
 				C701EC931F7A8F9A00340AA9 /* AllFriendsCell.swift in Sources */,
 				C78FC0F91F82EBF4008ED17D /* RealmMethods.swift in Sources */,
-				C767795E1FACB12E00EF25F9 /* newsService.swift in Sources */,
 				C78FC0E91F82E2C0008ED17D /* Friend.swift in Sources */,
 				C76779651FACB1D600EF25F9 /* Parser.swift in Sources */,
 				C701EC9F1F7A99AC00340AA9 /* AllGroupsCell.swift in Sources */,

@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/StartViewController.swift"
-            timestampString = "531404368.790668"
+            timestampString = "532958820.877239"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/StartViewController.swift"
-            timestampString = "531404368.790719"
+            timestampString = "532958820.877307"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/AllFriendsCell.swift"
-            timestampString = "529430523.438682"
+            timestampString = "532958820.87735"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
@@ -244,131 +244,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VK/FotoFriendsViewController.swift"
-            timestampString = "531418728.39215"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "FotoMyFrendCollectionViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.FotoMyFrendCollectionViewController.__deallocating_deinit"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
-                  timestampString = "528902806.98501"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.FotoMyFrendCollectionViewController.__allocating_init(collectionViewLayout: __ObjC.UICollectionViewLayout) -&gt; VK.FotoMyFrendCollectionViewController"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
-                  timestampString = "528902806.987001"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.FotoMyFrendCollectionViewController.init(collectionViewLayout: __ObjC.UICollectionViewLayout) -&gt; VK.FotoMyFrendCollectionViewController"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
-                  timestampString = "528902806.988513"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "21">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.FotoMyFrendCollectionViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; VK.FotoMyFrendCollectionViewController"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
-                  timestampString = "528902806.990643"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.FotoMyFrendCollectionViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; VK.FotoMyFrendCollectionViewController"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
-                  timestampString = "528902806.993398"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "46">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.FotoMyFrendCollectionViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;VK.FotoMyFrendCollectionViewController&gt;"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
-                  timestampString = "528902806.995165"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.FotoMyFrendCollectionViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;VK.FotoMyFrendCollectionViewController&gt;"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
-                  timestampString = "528902806.996309"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "21">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "VK/StartViewController.swift"
-            timestampString = "531404368.790806"
+            timestampString = "532958820.877413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
@@ -460,86 +337,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VK/AllGroupsCell.swift"
-            timestampString = "530831297.006057"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "AllGroupsCell"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.AllGroupsCell.nameGroups.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllGroupsCell.swift"
-                  timestampString = "528903013.029225"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "78">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.AllGroupsCell.nameGroups.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllGroupsCell.swift"
-                  timestampString = "528903013.030764"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "86">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.AllGroupsCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; VK.AllGroupsCell"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllGroupsCell.swift"
-                  timestampString = "528903013.031859"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.AllGroupsCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;VK.AllGroupsCell&gt;"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllGroupsCell.swift"
-                  timestampString = "528903013.03311"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "46">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "VK/AllGroupsController.swift"
-            timestampString = "530834594.978701"
+            timestampString = "532958820.877451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
@@ -661,105 +460,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VK/AllGroupsCell.swift"
-            timestampString = "530831297.006435"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "AllGroupsCell"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.AllGroupsCell.__deallocating_deinit"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllGroupsCell.swift"
-                  timestampString = "528903013.060668"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.AllGroupsCell.__allocating_init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; VK.AllGroupsCell"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllGroupsCell.swift"
-                  timestampString = "528903013.062637"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "13">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.AllGroupsCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; VK.AllGroupsCell"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllGroupsCell.swift"
-                  timestampString = "528903013.063885"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.AllGroupsCell.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;VK.AllGroupsCell&gt;"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllGroupsCell.swift"
-                  timestampString = "528903013.064966"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.AllGroupsCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;VK.AllGroupsCell&gt;"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllGroupsCell.swift"
-                  timestampString = "528903013.067617"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "46">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "VK/AllGroupsController.swift"
-            timestampString = "530834594.979337"
+            timestampString = "532958820.877487"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -771,7 +477,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/StartViewController.swift"
-            timestampString = "531404368.79089"
+            timestampString = "532958820.877521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -819,11 +525,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/AllGroupsController.swift"
-            timestampString = "530834594.979655"
+            timestampString = "532958820.877552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -835,59 +541,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/AllGroupsController.swift"
-            timestampString = "530834594.979919"
+            timestampString = "532958820.877584"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "filterContentForSearchText(_:scope:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.AllGroupsController.filterContentForSearchText(Swift.String, scope: Swift.String) -&gt; ()"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllGroupsController.swift"
-                  timestampString = "530834595.097969"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "239">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in VK.AllGroupsController.filterContentForSearchText(Swift.String, scope: Swift.String) -&gt; ()"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllGroupsController.swift"
-                  timestampString = "530834595.099181"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "28">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/AllGroupsController.swift"
-            timestampString = "530834594.980181"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -899,7 +557,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/AllGroupsController.swift"
-            timestampString = "530834594.980448"
+            timestampString = "532958820.877614"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -992,7 +650,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/AllGroupsController.swift"
-            timestampString = "530834594.980713"
+            timestampString = "532958820.877645"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -1008,7 +666,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/AllGroupsController.swift"
-            timestampString = "530834594.981246"
+            timestampString = "532958820.877677"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -1024,13 +682,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/VKGroupsService.swift"
-            timestampString = "532008536.633629"
+            timestampString = "532958820.877711"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
             endingLineNumber = "22"
-            landmarkName = "loadGroupSearchData(completion:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1040,13 +698,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/VKGroupsService.swift"
-            timestampString = "532008536.634085"
+            timestampString = "532958820.878024"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
             endingLineNumber = "14"
-            landmarkName = "GroupsRequest"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -1103,13 +761,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/VKGroupsService.swift"
-            timestampString = "532008536.634284"
+            timestampString = "532958820.878227"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
             endingLineNumber = "15"
-            landmarkName = "GroupsRequest"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1119,7 +777,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/AllGroupsController.swift"
-            timestampString = "530834594.981711"
+            timestampString = "532958820.878423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -1135,13 +793,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/VKGroupsService.swift"
-            timestampString = "532008536.634493"
+            timestampString = "532958820.87846"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "loadGroupSearchData(completion:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1151,7 +809,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/VKGroupsService.swift"
-            timestampString = "532008536.634768"
+            timestampString = "532958820.878652"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -1165,13 +823,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/VKGroupsService.swift"
-            timestampString = "532008536.634957"
+            timestampString = "532958820.878831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "loadGroupSearchData(completion:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1181,13 +839,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/VKGroupsService.swift"
-            timestampString = "532008536.635141"
+            timestampString = "532958820.879021"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "loadGroupSearchData(completion:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1197,11 +855,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/MyGroupsController.swift"
-            timestampString = "532005250.109017"
+            timestampString = "532958820.879215"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "addGroup(segue:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1213,13 +871,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/VKGroupsService.swift"
-            timestampString = "532008536.635342"
+            timestampString = "532958820.879251"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "GroupsRequest"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1229,77 +887,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/WKWallServiece.swift"
-            timestampString = "532008536.635603"
+            timestampString = "532958820.879442"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "loadWallSearchData(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.635668"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.636003"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.636179"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.636345"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1309,13 +903,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/WKWallServiece.swift"
-            timestampString = "532008536.636513"
+            timestampString = "532958820.879667"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "loadWallSearchData(completion:)"
-            landmarkType = "7">
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -1357,13 +951,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/WKWallServiece.swift"
-            timestampString = "532008536.636558"
+            timestampString = "532958820.87986"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "loadWallSearchData(completion:)"
-            landmarkType = "7">
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1373,13 +967,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/WKWallServiece.swift"
-            timestampString = "532008536.636595"
+            timestampString = "532958820.880076"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "saveNewsData(_:count:)"
-            landmarkType = "7">
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1389,219 +983,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.636631"
+            timestampString = "533222383.972409"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "loadData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.636841"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "loadData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.MyWallController.loadData() -&gt; ()"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/MyWallController.swift"
-                  timestampString = "531418728.547601"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "242">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.MyWallController.loadData() -&gt; ()"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/MyWallController.swift"
-                  timestampString = "531418728.548948"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "110"
-                  endingLineNumber = "110"
-                  offsetFromSymbolStart = "607">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.637016"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.637214"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "VK.MyWallController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/MyWallController.swift"
-                  timestampString = "531419805.222364"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "4344">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in VK.MyWallController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
-                  moduleName = "VK"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/MyWallController.swift"
-                  timestampString = "531419805.225215"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "227">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.637394"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.637589"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.637833"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.638135"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.638305"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.638472"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1613,29 +999,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/WKWallServiece.swift"
-            timestampString = "532008536.63864"
+            timestampString = "532958820.88048"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "saveNewsData(_:count:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VK/MyWallController.swift"
-            timestampString = "532008536.638682"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1645,7 +1015,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/Parser.swift"
-            timestampString = "532008536.638849"
+            timestampString = "533221787.231902"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
@@ -1661,12 +1031,950 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VK/WKWallServiece.swift"
-            timestampString = "532008536.638889"
+            timestampString = "532958820.880824"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "loadWallSearchData(completion:)"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/FotoFriendsViewController.swift"
+            timestampString = "533222383.972936"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FotoMyFrendCollectionViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532956168.6698"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "101">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in VK.FotoMyFrendCollectionViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532956168.672915"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in VK.FotoMyFrendCollectionViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532956168.674135"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "23">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/FotoFriendsViewController.swift"
+            timestampString = "533222383.972991"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "FotoMyFrendCollectionViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FotoMyFrendCollectionViewController.photos.getter : Swift.Array&lt;VK.Photo&gt;"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532957396.285055"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FotoMyFrendCollectionViewController.photos.setter : Swift.Array&lt;VK.Photo&gt;"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532957396.286508"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FotoMyFrendCollectionViewController.init(collectionViewLayout: __ObjC.UICollectionViewLayout) -&gt; VK.FotoMyFrendCollectionViewController"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532957396.288017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FotoMyFrendCollectionViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; VK.FotoMyFrendCollectionViewController"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532957396.290078"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "46">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FotoMyFrendCollectionViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;VK.FotoMyFrendCollectionViewController&gt;"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532957396.293126"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "21">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/FotoFriendsViewController.swift"
+            timestampString = "533222383.973031"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/FotoFriendsViewController.swift"
+            timestampString = "533222383.973072"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "FotoMyFrendCollectionViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "variable initialization expression of VK.FotoMyFrendCollectionViewController.photosRequest : VK.PhotosRequest"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532956287.852208"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FotoMyFrendCollectionViewController.photosRequest.getter : VK.PhotosRequest"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532956287.853614"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "102">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FotoMyFrendCollectionViewController.init(collectionViewLayout: __ObjC.UICollectionViewLayout) -&gt; VK.FotoMyFrendCollectionViewController"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532956287.854686"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "143">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FotoMyFrendCollectionViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; VK.FotoMyFrendCollectionViewController"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532956287.855704"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "183">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FotoMyFrendCollectionViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;VK.FotoMyFrendCollectionViewController&gt;"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/FotoFriendsViewController.swift"
+                  timestampString = "532956287.85672"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "110">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/Photo.swift"
+            timestampString = "532957629.926305"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "Photo"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.Photo.__ivar_destroyer"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/Photo.swift"
+                  timestampString = "532956402.667582"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.Photo.__deallocating_deinit"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/Photo.swift"
+                  timestampString = "532956402.673352"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.Photo.__allocating_init() -&gt; VK.Photo"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/Photo.swift"
+                  timestampString = "532956402.67624"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.Photo.init() -&gt; VK.Photo"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/Photo.swift"
+                  timestampString = "532956402.677631"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "14">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.Photo.__allocating_init(value: Any) -&gt; VK.Photo"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/Photo.swift"
+                  timestampString = "532956402.678991"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.Photo.init(value: Any) -&gt; VK.Photo"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/Photo.swift"
+                  timestampString = "532956402.680217"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.Photo.__allocating_init(realm: __ObjC.RLMRealm, schema: __ObjC.RLMObjectSchema) -&gt; VK.Photo"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/Photo.swift"
+                  timestampString = "532956402.681399"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.Photo.init(realm: __ObjC.RLMRealm, schema: __ObjC.RLMObjectSchema) -&gt; VK.Photo"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/Photo.swift"
+                  timestampString = "532956402.682523"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.Photo.__allocating_init(value: Any, schema: __ObjC.RLMSchema) -&gt; VK.Photo"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/Photo.swift"
+                  timestampString = "532956402.683688"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.Photo.init(value: Any, schema: __ObjC.RLMSchema) -&gt; VK.Photo"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/Photo.swift"
+                  timestampString = "532956402.685017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/VKPhotoService.swift"
+            timestampString = "532958820.881444"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "loadPhotosData(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.PhotosRequest.loadPhotosData(completion: () -&gt; ()) -&gt; ()"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/VKPhotoService.swift"
+                  timestampString = "532956850.308451"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1913">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in VK.PhotosRequest.loadPhotosData(completion: () -&gt; ()) -&gt; ()"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/VKPhotoService.swift"
+                  timestampString = "532956850.310037"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "273">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/VKFriendsService.swift"
+            timestampString = "532958820.881486"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "saveFriendsData(_:count:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/VKPhotoService.swift"
+            timestampString = "532958820.881524"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "PhotosRequest"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.PhotosRequest.deinit"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/VKPhotoService.swift"
+                  timestampString = "532956850.315664"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.PhotosRequest.__deallocating_deinit"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/VKPhotoService.swift"
+                  timestampString = "532956850.316991"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.PhotosRequest.__allocating_init() -&gt; VK.PhotosRequest"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/VKPhotoService.swift"
+                  timestampString = "532956850.318325"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.PhotosRequest.init() -&gt; VK.PhotosRequest"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/VKPhotoService.swift"
+                  timestampString = "532956850.319529"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/VKPhotoService.swift"
+            timestampString = "532958820.88156"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loadPhotosData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/VKFriendsService.swift"
+            timestampString = "532958820.881595"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "loadFriendsData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/VKFriendsService.swift"
+            timestampString = "532958820.881628"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "loadFriendsData(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/FotoFriendsViewController.swift"
+            timestampString = "533222383.973166"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/FotoFriendsViewController.swift"
+            timestampString = "533222383.973205"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/AllFriendsController.swift"
+            timestampString = "532958820.88175"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AllFriendsController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.AllFriendsController.__deallocating_deinit"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllFriendsController.swift"
+                  timestampString = "532958451.624705"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.AllFriendsController.__allocating_init(style: __C.UITableViewStyle) -&gt; VK.AllFriendsController"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllFriendsController.swift"
+                  timestampString = "532958451.630037"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.AllFriendsController.init(style: __C.UITableViewStyle) -&gt; VK.AllFriendsController"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllFriendsController.swift"
+                  timestampString = "532958451.648501"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.AllFriendsController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; VK.AllFriendsController"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllFriendsController.swift"
+                  timestampString = "532958451.650501"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.AllFriendsController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; VK.AllFriendsController"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllFriendsController.swift"
+                  timestampString = "532958451.652684"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "46">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.AllFriendsController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;VK.AllFriendsController&gt;"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllFriendsController.swift"
+                  timestampString = "532958451.655079"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.AllFriendsController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;VK.AllFriendsController&gt;"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/AllFriendsController.swift"
+                  timestampString = "532958451.65635"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "21">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/MyWallController.swift"
+            timestampString = "533222383.973257"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.MyWallController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/MyWallController.swift"
+                  timestampString = "532958553.046771"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "4950">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in VK.MyWallController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/MyWallController.swift"
+                  timestampString = "532958553.049474"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "227">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/MyWallController.swift"
+            timestampString = "533222383.973445"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.MyWallController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/MyWallController.swift"
+                  timestampString = "532958553.062079"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "4653">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in VK.MyWallController.tableView(__ObjC.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alenabenetckaya/Projects/VK/VK/MyWallController.swift"
+                  timestampString = "532958553.064982"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "227">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/MyWallController.swift"
+            timestampString = "533222383.973607"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/MyWallController.swift"
+            timestampString = "533222383.973782"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/FotoFriendsViewController.swift"
+            timestampString = "533222383.973997"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/FotoFriendsViewController.swift"
+            timestampString = "533222383.974048"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

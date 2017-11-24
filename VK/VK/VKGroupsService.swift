@@ -23,7 +23,7 @@ class GroupsRequest {
             "access_token": userDefaults.string(forKey: "token") ?? print("no Token")
         ]
         
-        Alamofire.request(url, parameters: parameters).responseJSON { response in
+        Alamofire.request(url, parameters: parameters).responseData(queue: .global(qos: .userInteractive)) { response in
             guard let data = response.value else { return }
             let json = JSON(data)
             let groups = json["response"].flatMap { Group(json: $0.1) }
