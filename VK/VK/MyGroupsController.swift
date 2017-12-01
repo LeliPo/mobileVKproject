@@ -14,6 +14,8 @@ import Realm
 
 class MyGroupsController: UITableViewController {
 
+    lazy var photoService = PhotosRequest(container: self.tableView)
+    
     var myGroups : Results<Group>?
     var token: NotificationToken?
     var realm = RealmMethods()
@@ -47,11 +49,8 @@ class MyGroupsController: UITableViewController {
             return cell
         }
         cell.nameGroupMy.text = group.name
-        
-        guard let imgURL = URL(string: group.photo) else { return cell }
-        Alamofire.request(imgURL).responseData { (response) in
-            cell.avatarMyGroup.image = UIImage(data: response.data!)
-        }
+        cell.avatarMyGroup.image = photoService.photo(atIndexpath: indexPath, byUrl: group.photo)
+
         return cell
     }
     

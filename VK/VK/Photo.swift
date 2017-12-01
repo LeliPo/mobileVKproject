@@ -14,6 +14,6 @@ class Photo: Object {
     @objc dynamic var photo = ""
     convenience init(json: JSON) {
         self.init()
-        self.photo = json["src_big"].stringValue
+        photo = json["photo_130"].stringValue
     }
 }

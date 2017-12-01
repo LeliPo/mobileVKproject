@@ -11,6 +11,8 @@ import Alamofire
 
 class AllGroupsController: UITableViewController, UISearchBarDelegate {
     
+    
+    lazy var photoService = PhotosRequest(container: self.tableView)
     let searchController = UISearchController(searchResultsController: nil)
     var groupsRequest = GroupsRequest()
     
@@ -68,11 +70,8 @@ class AllGroupsController: UITableViewController, UISearchBarDelegate {
         if isFiltering() {
             let group = groups[indexPath.row]
             cell.nameAllGroups.text  = group.name
-            
-            guard let imgURL = URL(string: group.photo) else { return cell }
-            Alamofire.request(imgURL).responseData { (response) in
-                cell.groupFhoto.image = UIImage(data: response.data!)
-        }
+            cell.groupFhoto.image = photoService.photo(atIndexpath: indexPath, byUrl: group.photo)
+
       }
         return cell
     }

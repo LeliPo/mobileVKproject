@@ -12,6 +12,9 @@ import RealmSwift
 
 class AllFriendsController: UITableViewController {
     
+   
+    lazy var photoService = PhotosRequest(container: self.tableView)
+    
     let friendRequest = FriendsRequest()
     var friends = [Friend]()
     
@@ -39,10 +42,11 @@ class AllFriendsController: UITableViewController {
         let friend = friends[indexPath.row]
         
         cell.friendsNamee.text = friend.firstName + " " + friend.lastName
-        guard let imgURL = URL(string: friend.photoAvatar) else {return cell}
-        Alamofire.request(imgURL).responseData { (response) in
-            cell.friendsAvatar.image = UIImage(data: response.data!)
-        }
+        cell.friendsAvatar.image = photoService.photo(atIndexpath: indexPath, byUrl: friend.photoAvatar)
+//        guard let imgURL = URL(string: friend.photoAvatar) else {return cell}
+//        Alamofire.request(imgURL).responseData { (response) in
+//            cell.friendsAvatar.image = UIImage(data: response.data!)
+//        }
         return cell
     }
     

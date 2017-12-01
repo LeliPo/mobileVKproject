@@ -16,6 +16,10 @@ import RealmSwift
 
 class MyWallController: UITableViewController {
 
+    
+    lazy var photoService: PhotosRequest = PhotosRequest(container: self.tableView)
+    
+    
     var newsMy = [Wall]()
     let newsRequest = WallRequest()
     
@@ -65,19 +69,21 @@ class MyWallController: UITableViewController {
         cell.viewsCount.text = String(describing: newsOne.likesCount)
         
         let mainPhotoUrl = newsOne.photoLink
-        print (mainPhotoUrl)
+        
+        if let mainPhotoUrl = newsOne.photoLink {
+            cell.photoNews.image = photoService.photo(atIndexpath: indexPath, byUrl: mainPhotoUrl)
+        } else {
+            cell.photoNews.image = nil
+        }
+        
+        cell.fotoFriendsNews.image = photoService.photo(atIndexpath: indexPath, byUrl: autorAvatarUrl)
+        
       if mainPhotoUrl != nil {
-        guard let imgURL = URL(string: mainPhotoUrl!) else {return cell}
-            Alamofire.request(imgURL).responseData { (response) in
-                cell.photoNews.image = UIImage(data: response.data!)}
+        cell.photoNews.image = photoService.photo(atIndexpath: indexPath, byUrl: mainPhotoUrl!)
         } else {
             cell.photoNews.image = nil
         }
 
-        guard let imgURL = URL(string: autorAvatarUrl) else {return cell}
-        Alamofire.request(imgURL).responseData { (response) in
-        cell.fotoFriendsNews.image =  UIImage(data: response.data!)
-        }
         return cell
     }
 

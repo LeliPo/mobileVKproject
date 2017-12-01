@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XNP-D3-ksh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XNP-D3-ksh">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -403,10 +404,6 @@
         <scene sceneID="cFX-sl-Iob">
             <objects>
                 <viewController id="XNP-D3-ksh" customClass="StartViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6mV-HP-GFq"/>
-                        <viewControllerLayoutGuide type="bottom" id="oiO-rI-7Zb"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NWj-fh-gAz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -422,11 +419,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="215-bf-Qeq" secondAttribute="trailing" id="ByT-Cg-BJm"/>
-                            <constraint firstItem="oiO-rI-7Zb" firstAttribute="top" secondItem="215-bf-Qeq" secondAttribute="bottom" id="s0z-cG-Qce"/>
+                            <constraint firstItem="gUC-6X-8El" firstAttribute="trailing" secondItem="215-bf-Qeq" secondAttribute="trailing" id="ByT-Cg-BJm"/>
+                            <constraint firstItem="gUC-6X-8El" firstAttribute="bottom" secondItem="215-bf-Qeq" secondAttribute="bottom" id="s0z-cG-Qce"/>
                             <constraint firstItem="215-bf-Qeq" firstAttribute="top" secondItem="NWj-fh-gAz" secondAttribute="top" id="tzS-zR-r3x"/>
-                            <constraint firstItem="215-bf-Qeq" firstAttribute="leading" secondItem="NWj-fh-gAz" secondAttribute="leading" id="u1R-cY-yNT"/>
+                            <constraint firstItem="215-bf-Qeq" firstAttribute="leading" secondItem="gUC-6X-8El" secondAttribute="leading" id="u1R-cY-yNT"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="gUC-6X-8El"/>
                     </view>
                     <connections>
                         <outlet property="startWebVieW" destination="215-bf-Qeq" id="TJe-vD-akR"/>

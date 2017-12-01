@@ -14,16 +14,17 @@ import RealmSwift
 class FotoMyFrendCollectionViewController: UICollectionViewController {
     
     var photos = [Photo]()
-    let photosRequest = PhotosRequest()
+    lazy var photosRequest = PhotosRequest(container: self.collectionView!)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
         
-        photosRequest.loadPhotosData() { [weak self] in
-            self?.loadData()
-                self?.collectionView?.reloadData()
-        }
+//        photosRequest.loadPhotosData() { [weak self] in
+//            self?.loadData()
+//                self?.collectionView?.reloadData()
+//        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,11 +47,8 @@ class FotoMyFrendCollectionViewController: UICollectionViewController {
         
         let photo = photos[indexPath.row]
         print(photo)
+        cell.fotoFrend.image = photosRequest.photo(atIndexpath: indexPath, byUrl: photos[indexPath.row].photo)
         
-        guard let imgURL = URL(string: photo.photo) else { return cell }
-        Alamofire.request(imgURL).responseData { (response) in
-            cell.fotoFrend.image = UIImage(data: response.data!)
-        }
         return cell
     }
     
